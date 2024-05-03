@@ -6,7 +6,7 @@
 > "IoT Made Easy!" 
 
 Devices: **| PIC32CXBZ2 | WBZ45x |**<br>
-Features: **| ZIGBEE |**
+Features: **| THREAD |**
 
 
 ## ⚠ Disclaimer
@@ -42,8 +42,6 @@ This application enables the users to create a Full Thread Device. Thread Thermo
 | TOOLS | QUANTITY |
 | :- | :- |
 | [PIC32CX-BZ2 and WBZ451 Curiosity Development Board](https://www.microchip.com/en-us/development-tool/EV96B94A) | 1 |
-| [FAN 3V] | 1 |
-
 
 ## 3. Software Setup<a name="step3">
 
@@ -83,13 +81,11 @@ This application enables the users to create a Full Thread Device. Thread Thermo
 
 **Step 3** - The "MCC - Harmony Project Graph" below depicts the harmony components utilized in this project.
 
-![](Docs/Project_graph.PNG)
+![](Docs/Project_graph.png)
 
 - From project graph, go to Plugins->PIN configuration and configure as follows.
  
-![](Docs/Pin_config.PNG)
-
-- In FreeRTOS configuration options, go to RTOS Configurations->Include components and make sure xTaskAbortDelay is selected.
+![](Docs/Pin_config.png)
 
 **Step 4** - [Generate](https://onlinedocs.microchip.com/pr/GUID-A5330D3A-9F51-4A26-B71D-8503A493DF9C-en-US-1/index.html?GUID-9C28F407-4879-4174-9963-2CF34161398E) the code.
  
@@ -102,14 +98,14 @@ This application enables the users to create a Full Thread Device. Thread Thermo
 | Note | This application repository should be cloned/downloaded to perform the following steps. |
 | :- | :- |
 
-- Copy the "app_temphum13" folder, which can be found by navigating to the following path: "...firmware\src"
+- Copy the "Thread_demo.c" and "Thread_demo.h" folder, which can be found by navigating to the following path: "...firmware\src"
 - Paste the folder under source files in your project folder (...\firmware\src).
 
 **Step 7** - Add the files in MPLAB X IDE to your project by following the steps mentioned below.
 
 - In Projects section, right click on Source files to add the ".c" file and Header files to add the ".h" file.
-- Select "Add existing items from folder".
-- Select Add and browse the location of "app_temphum13" folder (...\firmware\src). 
+- Select "Add existing item".
+- Select Add and browse the location of the mentioned files(...\firmware\src). 
 - Make sure the "Files of type" is "C Source files" while adding ".c" files and "Header files" while adding ".h" files.
 - Select the folder and click "add".
 
@@ -118,7 +114,7 @@ This application enables the users to create a Full Thread Device. Thread Thermo
 | Note | This application repository should be cloned/downloaded to perform the following steps. |
 | :- | :- |
 
-- Copy the "app.c", "app.h", "thread_demo.c" and  "thread_demo.h" folder, which can be found by navigating to the following path: "...firmware\src"
+- Copy the "app.c" and "app.h" folder, which can be found by navigating to the following path: "...firmware\src"
 - Paste the folder under source files in your project folder (...\firmware\src).
 
 **Step 7** - Clean and build the project. To run the project, select "Make and program device" button.
