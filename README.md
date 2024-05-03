@@ -23,15 +23,14 @@ Checkout the <a href="https://microchipsupport.force.com/s/" target="_blank">Tec
 
 1. [Introduction](#step1)
 1. [Bill of materials](#step2)
-1. [Hardware Setup](#step3)
-1. [Software Setup](#step4)
-1. [Harmony MCC Configuration](#step5)
-1. [Board Programming](#step6)
-1. [Run the demo](#step7)
+1. [Software Setup](#step3)
+1. [Harmony MCC Configuration](#step4)
+1. [Board Programming](#step5)
+1. [Run the demo](#step6)
 
 ## 1. Introduction<a name="step1">
 
-This application enables the users to create a Minimal Thread Device. Thread Thermostat receives the Temperature from the Temperature Sensor device and Setpoint from the gateway.  This data is used for HVAC control. When the current temperature is higher than the set temperature the air conditioner is switched ON and vice versa.
+This application enables the users to create a Full Thread Device. Thread Thermostat receives the Temperature from the Temperature Sensor device and Setpoint from the gateway once it has joined the thread network.  This data is used for HVAC control. When the current temperature is higher than the set temperature the air conditioner is switched ON indicated by an LED and vice versa.
 
 ![](Docs/Hardware_setup.png)
 
@@ -45,18 +44,15 @@ This application enables the users to create a Minimal Thread Device. Thread The
 | [PIC32CX-BZ2 and WBZ451 Curiosity Development Board](https://www.microchip.com/en-us/development-tool/EV96B94A) | 1 |
 | [FAN 3V] | 1 |
 
-## 3. Hardware Setup<a name="step3">
 
-Connect the fan to the WBZ451 Curiosity board.
-
-## 4. Software Setup<a name="step4">
+## 3. Software Setup<a name="step3">
 
 - [MPLAB X IDE ](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide#tabs)
 
-    - Version: 6.15
-	- XC32 Compiler v4.10
-	- MPLAB® Code Configurator v5.1.17
-	- PIC32CX-BZ_DFP v1.0.107
+    - Version: 6.20
+	- XC32 Compiler v4.35
+	- MPLAB® Code Configurator v5.5.0
+	- PIC32CX-BZ_DFP v1.2.230
 	- MCC Harmony
 	  - csp version: v3.18.0
 	  - core version: v3.13.1
@@ -72,9 +68,9 @@ Connect the fan to the WBZ451 Curiosity board.
 
 - Any Serial Terminal application like [TERA TERM](https://download.cnet.com/Tera-Term/3000-2094_4-75766675.html) terminal application
 
-- [MPLAB X IPE v6.00](https://microchipdeveloper.com/ipe:installation)
+- [MPLAB X IPE v6.15](https://microchipdeveloper.com/ipe:installation)
 
-## 5. Harmony MCC Configuration<a name="step5">
+## 4. Harmony MCC Configuration<a name="step4">
 
 ### Getting started with Multisensor application in WBZ451 Curiosity board 
 
@@ -122,12 +118,12 @@ Connect the fan to the WBZ451 Curiosity board.
 | Note | This application repository should be cloned/downloaded to perform the following steps. |
 | :- | :- |
 
-- Copy the "app.c", "app.h", "thread_demo.c", "thread_demo.h", "udp_demo.c" and "udp_demo.h" folder, which can be found by navigating to the following path: "...firmware\src"
+- Copy the "app.c", "app.h", "thread_demo.c" and  "thread_demo.h" folder, which can be found by navigating to the following path: "...firmware\src"
 - Paste the folder under source files in your project folder (...\firmware\src).
 
 **Step 7** - Clean and build the project. To run the project, select "Make and program device" button.
 
-## 6. Board Programming<a name="step6">
+## 5. Board Programming<a name="step5">
 
 ### Program the precompiled hex file using MPLAB X IPE
 
@@ -139,6 +135,6 @@ Follow the steps provided in the link to [program the precompiled hex file](http
 
 Follow the steps provided in the link to [Build and program the application](https://github.com/Microchip-MPLAB-Harmony/wireless_apps_pic32cxbz2_wbz45/tree/master/apps/ble/advanced_applications/ble_sensor#build-and-program-the-application-guid-3d55fb8a-5995-439d-bcd6-deae7e8e78ad-section).
 
-## 7. Run the demo<a name="step7">
+## 6. Run the demo<a name="step6">
 
-- Once the gateway device is powered on the Temperature sensor will join the network. The temperature will get reported periodically to the Gateway. Once the Thermostat joins the network the Gateway device sends the HVAC address and now the Temperature sensor will start reporting the sensor values to the HVAC device. When the current temperature is higher than the set temperature the air conditioner is switched ON and vice versa.
+- Once the Gateway compatible thread device is powered on the Temperature sensor will join the network. The temperature will get reported periodically to the Gateway compatible thread device. Once the Thermostat joins the network the Gateway device sends the HVAC address and now the Temperature sensor will start reporting the sensor values to the HVAC device. When the current temperature is higher than the set temperature the air conditioner is switched ON and vice versa. In this example we have switched ON the LED.
