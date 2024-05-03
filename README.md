@@ -6,7 +6,7 @@
 > "IoT Made Easy!" 
 
 Devices: **| PIC32CXBZ2 | WBZ45x |**<br>
-Features: **| THREAD |**
+Features: **| OpenThread |**
 
 
 ## ⚠ Disclaimer
