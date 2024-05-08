@@ -30,7 +30,7 @@ Checkout the <a href="https://microchipsupport.force.com/s/" target="_blank">Tec
 
 ## 1. Introduction<a name="step1">
 
-This application enables the users to create a Full Thread Device. Thread Thermostat receives the Temperature from the Temperature Sensor device and Setpoint from the gateway once it has joined the thread network.  This data is used for HVAC control. When the current temperature is higher than the set temperature the air conditioner is switched ON indicated by an LED and vice versa.
+This application enables the users to create a Full Thread Device. Thread Thermostat receives the Temperature from the Temperature Sensor device and Setpoint from the [Thread co-processor device](https://github.com/MicrochipTech/PIC32CXBZ2_WBZ45x_THREAD_co-processor) once it has joined the thread network.  This data is used for HVAC control. When the current temperature is higher than the set temperature the air conditioner is switched ON indicated by an LED and vice versa.
 
 ![](Docs/Hardware_setup.png)
 
@@ -80,6 +80,40 @@ This application enables the users to create a Full Thread Device. Thread Thermo
 **Step 2** - This application is built by using Thread UDP Application as the building block. Please go through this [link](https://onlinedocs.microchip.com/oxy/GUID-2DB248AF-C243-496D-9819-969E43CA63BC-en-US-1/GUID-10731AEE-FEA5-4059-8279-2DBFBDBAD2F0.html) to create the project from scratch.
 
 **Step 3** - The "MCC - Harmony Project Graph" below depicts the harmony components utilized in this project.
+
+![](Docs/Project_graph.png)
+
+- From Device Resources, go to Libraries->Harmony->Board Support Packages and add WBZ451 Curiosity BSP.
+ 
+- From Device Resources, go to Libraries->Harmony->Wireless->Drivers->Thread and add Thread Stack. Click "Yes" on all the Pop-ups to add the link the dependencies.
+
+- Ensure the configuration of Thread Stack is as below.
+
+![](Docs/Thread_Config.png)
+
+- Ensure the configuration of FreeRTOS is as below. Total heap size should be 61440.
+
+![](Docs/RTOS_Config.png)
+
+- From Device Resources, go to Libraries->Harmony->System Services and add COMMAND. Ensure the below configuration.
+
+![](Docs/Command_Config.png)
+
+- Right Click on SYS_CONSOLE of COMMAND and add CONSOLE as below. Ensure the configurations.
+
+![](Docs/Console.png)
+
+![](Docs/Console_Config.png)
+
+- Right Click on UART of CONSOLE and add SERCOM0 as below. Ensure the configurations.
+
+![](Docs/Sercom0.png)
+
+![](Docs/Sercom0_Configuration.PNG)
+
+- Modify the System Configuration as below.
+
+![](Docs/System_Config.png)
 
 ![](Docs/Project_graph.png)
 
@@ -133,4 +167,12 @@ Follow the steps provided in the link to [Build and program the application](htt
 
 ## 6. Run the demo<a name="step6">
 
-- Once the Gateway compatible thread device is powered on the Temperature sensor will join the network. The temperature will get reported periodically to the Gateway compatible thread device. Once the Thermostat joins the network the Gateway device sends the HVAC address and now the Temperature sensor will start reporting the sensor values to the HVAC device. When the current temperature is higher than the set temperature the air conditioner is switched ON and vice versa. In this example we have switched ON the LED.
+- Once the [Thread co-processor device](https://github.com/MicrochipTech/PIC32CXBZ2_WBZ45x_THREAD_co-processor) is powered on the Temperature sensor will join the network. The temperature will get reported periodically to the hread co-processor device. Once the Thermostat joins the network the [Thread co-processor device](https://github.com/MicrochipTech/PIC32CXBZ2_WBZ45x_THREAD_co-processor) sends the HVAC address and now the Temperature sensor will start reporting the sensor values to the HVAC device. 
+
+![](Docs/HVAC_ADD.png)
+
+When the current temperature is higher than the set temperature the air conditioner is switched ON and vice versa. In this example we have switched ON the LED.
+
+![](Docs/AC_ON.png)
+
+![](Docs/AC_OFF.png)
