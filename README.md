@@ -109,7 +109,7 @@ This application enables the users to create a Full Thread Device. Thread Thermo
 
 ![](Docs/Sercom0.png)
 
-![](Docs/Sercom0_Configuration.PNG)
+![](Docs/Sercom0_Config.png)
 
 - Modify the System Configuration as below.
 
