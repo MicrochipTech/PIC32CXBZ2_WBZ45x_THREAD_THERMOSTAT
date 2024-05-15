@@ -15,7 +15,7 @@
         "compiler": [
             {
                 "name": "XC32",
-                "semverRange": "^4.35.0"
+                "semverRange": "^4.3.0"
             }
         ],
         "dfp": {
@@ -41,7 +41,7 @@
             "SERCOM"
         ],
         "keywords": [
-             "IoT","MPLAB X","XC32","Thread","SERCOM","MCC","Wireless","Development Tool","Temperature","I2C","Edge Node"
+             "IoT","MPLAB X","XC32","SERCOM","MCC","Wireless","Development Tool","Temperature","Edge Node"
         ],
         "additionalData": {
             "longDescription": {
