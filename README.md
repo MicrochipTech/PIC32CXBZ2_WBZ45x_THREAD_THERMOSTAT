@@ -70,14 +70,14 @@ This application enables the users to create a Full Thread Device. Thread Thermo
 
 ## 4. Harmony MCC Configuration<a name="step4">
 
-### Getting started with Multisensor application in WBZ451 Curiosity board 
+### Getting started with Thermostat application in WBZ451 Curiosity board 
 
 | Tip | New users of MPLAB Code Configurator are recommended to go through the [overview](https://onlinedocs.microchip.com/pr/GUID-1F7007B8-9A46-4D03-AEED-650357BA760D-en-US-6/index.html?GUID-B5D058F5-1D0B-4720-8649-ACE5C0EEE2C0) |
 | :- | :- |
 
 **Step 1** - Connect the WBZ451 CURIOSITY BOARD with Temp&Hum 13 click to the device/system using a micro-USB cable.
 
-**Step 2** - This application is built by using Thread UDP Application as the building block. Please go through this [link](https://onlinedocs.microchip.com/oxy/GUID-2DB248AF-C243-496D-9819-969E43CA63BC-en-US-1/GUID-10731AEE-FEA5-4059-8279-2DBFBDBAD2F0.html) to create the project from scratch.
+**Step 2** - Create a [new MCC Harmony project](https://github.com/MicrochipTech/EA71C53A/blob/master/H3/wireless_apps_pic32cxbz2_wbz45/apps/docs/creating_new_mplabx_harmony_project.md#creating-a-new-mcc-harmony-project).
 
 **Step 3** - The "MCC - Harmony Project Graph" below depicts the harmony components utilized in this project.
 
