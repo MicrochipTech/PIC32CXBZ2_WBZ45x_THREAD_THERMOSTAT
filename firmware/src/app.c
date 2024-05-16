@@ -117,7 +117,8 @@ static TimerHandle_t Data_receive_LED_Timer_Handle = NULL;
 
 extern volatile uint16_t temperature_value;
 
-devTypeThermostatHVACSet_t hvacActuator = {30.5};
+devTypeThermostatHVACSet_t hvacActuator = {30
+};
 
 static void Data_sent_LED_Timer_Callback(TimerHandle_t xTimer)
 {
@@ -329,7 +330,7 @@ void threadReceiveData(const otMessageInfo *aMessageInfo, uint16_t length, uint8
         memcpy(&gatewayAddr, rxMsg->msg, OT_IP6_ADDRESS_SIZE);
         demoMsg.msgType = MSG_TYPE_GATEWAY_DISCOVER_RESP;
         memcpy(&demoMsg.msg, &threadDevice, sizeof(devDetails_t));
-        hvacActuator.setPoint = 30;
+       // hvacActuator.setPoint = 30;
         threadUdpSend(&gatewayAddr, sizeof(devMsgType_t), (uint8_t *)&demoMsg);
 //        app_printf("App Log: DiscReq\r\n");
     }
