@@ -159,7 +159,7 @@ volatile uint16_t temperature_value;
 
 void tempTmrCb(TimerHandle_t pxTimer)
 {
-    temperature_value = temphum13_get_temperature();
+    // temperature_value = temphum13_get_temperature();
 }
 
 void printIpv6Address(void)
