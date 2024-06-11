@@ -4,11 +4,6 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <logicalFolder name="app_tempHum13"
-                     displayName="app_tempHum13"
-                     projectFiles="true">
-        <itemPath>../src/app_tempHum13/app_temphum13.h</itemPath>
-      </logicalFolder>
       <logicalFolder name="config" displayName="config" projectFiles="true">
         <logicalFolder name="default" displayName="default" projectFiles="true">
           <logicalFolder name="bsp" displayName="bsp" projectFiles="true">
@@ -66,7 +61,6 @@
             <logicalFolder name="thread" displayName="thread" projectFiles="true">
               <logicalFolder name="inc" displayName="inc" projectFiles="true">
                 <logicalFolder name="crypto" displayName="crypto" projectFiles="true">
-                  <itemPath>../src/config/default/driver/thread/inc/crypto/aes_alt.h</itemPath>
                   <itemPath>../src/config/default/driver/thread/inc/crypto/pic32cx-mbedtls-config.h</itemPath>
                   <itemPath>../src/config/default/driver/thread/inc/crypto/check_config.h</itemPath>
                 </logicalFolder>
@@ -89,7 +83,6 @@
                       <itemPath>../src/config/default/driver/thread/openthread/examples/platforms/utils/encoding.h</itemPath>
                       <itemPath>../src/config/default/driver/thread/openthread/examples/platforms/utils/code_utils.h</itemPath>
                       <itemPath>../src/config/default/driver/thread/openthread/examples/platforms/utils/link_metrics.h</itemPath>
-                      <itemPath>../src/config/default/driver/thread/openthread/examples/platforms/utils/uart_rtt.h</itemPath>
                     </logicalFolder>
                     <itemPath>../src/config/default/driver/thread/openthread/examples/platforms/openthread-system.h</itemPath>
                   </logicalFolder>
@@ -306,7 +299,6 @@
                       <itemPath>../src/config/default/driver/thread/openthread/src/core/config/mesh_diag.h</itemPath>
                       <itemPath>../src/config/default/driver/thread/openthread/src/core/config/network_diagnostic.h</itemPath>
                       <itemPath>../src/config/default/driver/thread/openthread/src/core/config/mesh_forwarder.h</itemPath>
-                      <itemPath>../src/config/default/driver/thread/openthread/src/core/config/link_metrics_manager.h</itemPath>
                     </logicalFolder>
                     <logicalFolder name="crypto" displayName="crypto" projectFiles="true">
                       <itemPath>../src/config/default/driver/thread/openthread/src/core/crypto/context_size.hpp</itemPath>
@@ -438,10 +430,8 @@
                       <itemPath>../src/config/default/driver/thread/openthread/src/core/thread/lowpan.hpp</itemPath>
                       <itemPath>../src/config/default/driver/thread/openthread/src/core/thread/mlr_manager.hpp</itemPath>
                       <itemPath>../src/config/default/driver/thread/openthread/src/core/thread/network_data_leader_ftd.hpp</itemPath>
-                      <itemPath>../src/config/default/driver/thread/openthread/src/core/thread/router.hpp</itemPath>
                       <itemPath>../src/config/default/driver/thread/openthread/src/core/thread/child_supervision.hpp</itemPath>
-                      <itemPath>../src/config/default/driver/thread/openthread/src/core/thread/neighbor.hpp</itemPath>
-                      <itemPath>../src/config/default/driver/thread/openthread/src/core/thread/child.hpp</itemPath>
+                      <itemPath>../src/config/default/driver/thread/openthread/src/core/thread/topology.hpp</itemPath>
                     </logicalFolder>
                     <logicalFolder name="utils" displayName="utils" projectFiles="true">
                       <itemPath>../src/config/default/driver/thread/openthread/src/core/utils/heap.hpp</itemPath>
@@ -457,7 +447,6 @@
                       <itemPath>../src/config/default/driver/thread/openthread/src/core/utils/slaac_address.hpp</itemPath>
                       <itemPath>../src/config/default/driver/thread/openthread/src/core/utils/parse_cmdline.hpp</itemPath>
                       <itemPath>../src/config/default/driver/thread/openthread/src/core/utils/mesh_diag.hpp</itemPath>
-                      <itemPath>../src/config/default/driver/thread/openthread/src/core/utils/link_metrics_manager.hpp</itemPath>
                     </logicalFolder>
                     <itemPath>../src/config/default/driver/thread/openthread/src/core/openthread-core-config.h</itemPath>
                   </logicalFolder>
@@ -639,10 +628,6 @@
               <itemPath>../src/config/default/peripheral/rcon/plib_rcon.h</itemPath>
             </logicalFolder>
             <logicalFolder name="sercom" displayName="sercom" projectFiles="true">
-              <logicalFolder name="i2c_master" displayName="i2c_master" projectFiles="true">
-                <itemPath>../src/config/default/peripheral/sercom/i2c_master/plib_sercom_i2c_master_common.h</itemPath>
-                <itemPath>../src/config/default/peripheral/sercom/i2c_master/plib_sercom2_i2c_master.h</itemPath>
-              </logicalFolder>
               <logicalFolder name="usart" displayName="usart" projectFiles="true">
                 <itemPath>../src/config/default/peripheral/sercom/usart/plib_sercom0_usart.h</itemPath>
                 <itemPath>../src/config/default/peripheral/sercom/usart/plib_sercom_usart_common.h</itemPath>
@@ -1005,11 +990,6 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <logicalFolder name="app_tempHum13"
-                     displayName="app_tempHum13"
-                     projectFiles="true">
-        <itemPath>../src/app_tempHum13/app_temphum13.c</itemPath>
-      </logicalFolder>
       <logicalFolder name="config" displayName="config" projectFiles="true">
         <logicalFolder name="default" displayName="default" projectFiles="true">
           <logicalFolder name="bsp" displayName="bsp" projectFiles="true">
@@ -1059,7 +1039,6 @@
                       <itemPath>../src/config/default/driver/thread/openthread/examples/platforms/utils/mac_frame.cpp</itemPath>
                       <itemPath>../src/config/default/driver/thread/openthread/examples/platforms/utils/soft_source_match_table.c</itemPath>
                       <itemPath>../src/config/default/driver/thread/openthread/examples/platforms/utils/link_metrics.cpp</itemPath>
-                      <itemPath>../src/config/default/driver/thread/openthread/examples/platforms/utils/uart_rtt.c</itemPath>
                     </logicalFolder>
                   </logicalFolder>
                 </logicalFolder>
@@ -1288,11 +1267,8 @@
                       <itemPath>../src/config/default/driver/thread/openthread/src/core/thread/panid_query_server.cpp</itemPath>
                       <itemPath>../src/config/default/driver/thread/openthread/src/core/thread/link_metrics_types.cpp</itemPath>
                       <itemPath>../src/config/default/driver/thread/openthread/src/core/thread/network_diagnostic.cpp</itemPath>
-                      <itemPath>../src/config/default/driver/thread/openthread/src/core/thread/neighbor.cpp</itemPath>
-                      <itemPath>../src/config/default/driver/thread/openthread/src/core/thread/child.cpp</itemPath>
                       <itemPath>../src/config/default/driver/thread/openthread/src/core/thread/child_supervision.cpp</itemPath>
-                      <itemPath>../src/config/default/driver/thread/openthread/src/core/thread/router.cpp</itemPath>
-                      <itemPath>../src/config/default/driver/thread/openthread/src/core/thread/network_diagnostic_tlvs.cpp</itemPath>
+                      <itemPath>../src/config/default/driver/thread/openthread/src/core/thread/topology.cpp</itemPath>
                     </logicalFolder>
                     <logicalFolder name="utils" displayName="utils" projectFiles="true">
                       <itemPath>../src/config/default/driver/thread/openthread/src/core/utils/otns.cpp</itemPath>
@@ -1308,7 +1284,6 @@
                       <itemPath>../src/config/default/driver/thread/openthread/src/core/utils/slaac_address.cpp</itemPath>
                       <itemPath>../src/config/default/driver/thread/openthread/src/core/utils/srp_client_buffers.cpp</itemPath>
                       <itemPath>../src/config/default/driver/thread/openthread/src/core/utils/mesh_diag.cpp</itemPath>
-                      <itemPath>../src/config/default/driver/thread/openthread/src/core/utils/link_metrics_manager.cpp</itemPath>
                     </logicalFolder>
                   </logicalFolder>
                 </logicalFolder>
@@ -1419,7 +1394,7 @@
               </logicalFolder>
               <logicalFolder name="src" displayName="src" projectFiles="true">
                 <logicalFolder name="crypto" displayName="crypto" projectFiles="true">
-                  <itemPath>../src/config/default/driver/thread/src/crypto/aes_alt.c</itemPath>
+                  <itemPath>../src/config/default/driver/thread/src/crypto/crypto.c</itemPath>
                 </logicalFolder>
                 <itemPath>../src/config/default/driver/thread/src/entropy.c</itemPath>
                 <itemPath>../src/config/default/driver/thread/src/diag.c</itemPath>
@@ -1428,10 +1403,10 @@
                 <itemPath>../src/config/default/driver/thread/src/radio.c</itemPath>
                 <itemPath>../src/config/default/driver/thread/src/flash.c</itemPath>
                 <itemPath>../src/config/default/driver/thread/src/misc.c</itemPath>
-                <itemPath>../src/config/default/driver/thread/src/cxx_helpers.c</itemPath>
                 <itemPath>../src/config/default/driver/thread/src/logging.c</itemPath>
                 <itemPath>../src/config/default/driver/thread/src/uart.c</itemPath>
                 <itemPath>../src/config/default/driver/thread/src/system.c</itemPath>
+                <itemPath>../src/config/default/driver/thread/src/cxx_helpers.cpp</itemPath>
               </logicalFolder>
             </logicalFolder>
           </logicalFolder>
@@ -1462,9 +1437,6 @@
               <itemPath>../src/config/default/peripheral/rcon/plib_rcon.c</itemPath>
             </logicalFolder>
             <logicalFolder name="sercom" displayName="sercom" projectFiles="true">
-              <logicalFolder name="i2c_master" displayName="i2c_master" projectFiles="true">
-                <itemPath>../src/config/default/peripheral/sercom/i2c_master/plib_sercom2_i2c_master.c</itemPath>
-              </logicalFolder>
               <logicalFolder name="usart" displayName="usart" projectFiles="true">
                 <itemPath>../src/config/default/peripheral/sercom/usart/plib_sercom0_usart.c</itemPath>
               </logicalFolder>
@@ -1645,7 +1617,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>pkob4hybrid</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.35</languageToolchainVersion>
+        <languageToolchainVersion>4.40</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
@@ -1657,9 +1629,9 @@
       <compileType>
         <linkerTool>
           <linkerLibItems>
-            <linkerLibFileItem>../src/config/default/driver/lib/lib-ieee802154_phy_pic32cxbz-v1.1.0.a</linkerLibFileItem>
             <linkerLibFileItem>../src/config/default/driver/pds/pds.a</linkerLibFileItem>
             <linkerLibFileItem>../src/config/default/driver/device_support/pic32cx_bz2_device_support.a</linkerLibFileItem>
+            <linkerLibFileItem>../src/config/default/driver/lib/lib-ieee802154_phy_pic32cxbz-v1.2.0.a</linkerLibFileItem>
           </linkerLibItems>
         </linkerTool>
         <archiverTool>

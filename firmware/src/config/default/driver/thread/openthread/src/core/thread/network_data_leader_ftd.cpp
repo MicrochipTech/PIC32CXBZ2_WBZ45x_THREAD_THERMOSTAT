@@ -1018,13 +1018,13 @@ Error Leader::AllocateServiceId(uint8_t &aServiceId) const
 #if OPENTHREAD_CONFIG_BORDER_ROUTER_SIGNAL_NETWORK_DATA_FULL
     if (mIsClone)
     {
-        aServiceId = kMinServiceId;
+        aServiceId = Mle::kServiceMinId;
         error      = kErrorNone;
         ExitNow();
     }
 #endif
 
-    for (serviceId = kMinServiceId; serviceId <= kMaxServiceId; serviceId++)
+    for (serviceId = Mle::kServiceMinId; serviceId <= Mle::kServiceMaxId; serviceId++)
     {
         if (FindServiceById(serviceId) == nullptr)
         {
@@ -1319,33 +1319,8 @@ void Leader::HandleNetworkDataRestoredAfterReset(void)
 {
     const PrefixTlv *prefix;
     TlvIterator      tlvIterator(GetTlvsStart(), GetTlvsEnd());
-    Iterator         iterator = kIteratorInit;
-    ChangedFlags     flags;
-    uint16_t         rloc16;
 
     mWaitingForNetDataSync = false;
-
-    // Remove entries in Network Data from any un-allocated Router ID.
-    // This acts as a safeguard against an edge case where the leader
-    // is reset at an inopportune time, such as right after it removed
-    // an allocated router ID and sent MLE advertisement but before it
-    // got the chance to send the updated Network Data to other
-    // routers.
-
-    while (GetNextServer(iterator, rloc16) == kErrorNone)
-    {
-        if (!Get<RouterTable>().IsAllocated(Mle::RouterIdFromRloc16(rloc16)))
-        {
-            // After we `RemoveRloc()` the Network Data gets changed
-            // and the `iterator` will not be valid anymore. So we set
-            // it to `kIteratorInit` to restart the loop.
-
-            RemoveRloc(rloc16, kMatchModeRouterId, flags);
-            iterator = kIteratorInit;
-        }
-    }
-
-    IncrementVersions(flags);
 
     // Synchronize internal 6LoWPAN Context ID Set with the
     // recently obtained Network Data.

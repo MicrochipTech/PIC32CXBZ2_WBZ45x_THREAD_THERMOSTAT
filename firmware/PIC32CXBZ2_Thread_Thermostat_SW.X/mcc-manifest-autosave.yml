@@ -2,15 +2,15 @@
 
 manifest_file_version: 1.0.0
 project: PIC32CXBZ2_Thread_Thermostat_SW
-creation_date: 2024-05-03T08:51:48.485+05:30[Asia/Calcutta]
+creation_date: 2024-06-11T14:19:10.084+05:30[Asia/Calcutta]
 operating_system: Windows 10
 mcc_mode: IDE
 mcc_mode_version: v6.20
 device_name: WBZ451
-compiler: XC32 4.35
-mcc_version: 5.5.0
-mcc_core_version: 5.6.1
-content_manager_version: 4.3.2
+compiler: XC32 4.40
+mcc_version: 5.5.1
+mcc_core_version: 5.7.1
+content_manager_version: 5.0.0
 is_mcc_offline: false
 is_using_prerelease_versions: false
 mcc_content_registries: https://registry.npmjs.org/

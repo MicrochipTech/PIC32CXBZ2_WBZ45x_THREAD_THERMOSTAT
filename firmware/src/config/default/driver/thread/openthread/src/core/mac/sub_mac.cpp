@@ -316,7 +316,7 @@ void SubMac::LogReceived(RxFrame *aFrame)
     // Treat as a warning when the deviation is not within the margins. Neither kCslReceiveTimeAhead
     // or kMinReceiveOnAhead/kMinReceiveOnAfter are considered for the margin since they have no
     // impact on understanding possible deviation errors between transmitter and receiver. So in this
-    // case only `ahead` is used, as an allowable max deviation in both +/- directions.
+    // case ahead equals after.
     if ((deviation + ahead > 0) && (deviation < static_cast<int32_t>(ahead)))
     {
         LogDebg("%s", logString.AsCString());
@@ -468,10 +468,10 @@ void SubMac::StartCsmaBackoff(void)
         {
             if (Time(static_cast<uint32_t>(otPlatRadioGetNow(&GetInstance()))) <
                 Time(mTransmitFrame.mInfo.mTxInfo.mTxDelayBaseTime) + mTransmitFrame.mInfo.mTxInfo.mTxDelay -
-                    kCcaSampleInterval - kCslTransmitTimeAhead - kRadioHeaderShrDuration)
+                    kCcaSampleInterval - kCslTransmitTimeAhead)
             {
                 mTimer.StartAt(Time(mTransmitFrame.mInfo.mTxInfo.mTxDelayBaseTime) - kCcaSampleInterval -
-                                   kCslTransmitTimeAhead - kRadioHeaderShrDuration,
+                                   kCslTransmitTimeAhead,
                                mTransmitFrame.mInfo.mTxInfo.mTxDelay);
             }
             else // Transmit without delay

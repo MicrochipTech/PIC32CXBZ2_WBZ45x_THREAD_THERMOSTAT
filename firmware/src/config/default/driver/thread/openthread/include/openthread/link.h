@@ -714,7 +714,7 @@ void otLinkSetMaxFrameRetriesIndirect(otInstance *aInstance, uint8_t aMaxFrameRe
 /**
  * Gets the address mode of MAC filter.
  *
- * Is available when `OPENTHREAD_CONFIG_MAC_FILTER_ENABLE` configuration is enabled.
+ * Is available when OPENTHREAD_CONFIG_MAC_FILTER_ENABLE configuration is enabled.
  *
  * @param[in]  aInstance  A pointer to an OpenThread instance.
  *
@@ -726,7 +726,7 @@ otMacFilterAddressMode otLinkFilterGetAddressMode(otInstance *aInstance);
 /**
  * Sets the address mode of MAC filter.
  *
- * Is available when `OPENTHREAD_CONFIG_MAC_FILTER_ENABLE` configuration is enabled.
+ * Is available when OPENTHREAD_CONFIG_MAC_FILTER_ENABLE configuration is enabled.
  *
  * @param[in]  aInstance  A pointer to an OpenThread instance.
  * @param[in]  aMode      The address mode to set.
@@ -737,7 +737,7 @@ void otLinkFilterSetAddressMode(otInstance *aInstance, otMacFilterAddressMode aM
 /**
  * Adds an Extended Address to MAC filter.
  *
- * Is available when `OPENTHREAD_CONFIG_MAC_FILTER_ENABLE` configuration is enabled.
+ * Is available when OPENTHREAD_CONFIG_MAC_FILTER_ENABLE configuration is enabled.
  *
  * @param[in]  aInstance    A pointer to an OpenThread instance.
  * @param[in]  aExtAddress  A pointer to the Extended Address (MUST NOT be NULL).
@@ -751,7 +751,7 @@ otError otLinkFilterAddAddress(otInstance *aInstance, const otExtAddress *aExtAd
 /**
  * Removes an Extended Address from MAC filter.
  *
- * Is available when `OPENTHREAD_CONFIG_MAC_FILTER_ENABLE` configuration is enabled.
+ * Is available when OPENTHREAD_CONFIG_MAC_FILTER_ENABLE configuration is enabled.
  *
  * No action is performed if there is no existing entry in Filter matching the given Extended Address.
  *
@@ -764,7 +764,7 @@ void otLinkFilterRemoveAddress(otInstance *aInstance, const otExtAddress *aExtAd
 /**
  * Clears all the Extended Addresses from MAC filter.
  *
- * Is available when `OPENTHREAD_CONFIG_MAC_FILTER_ENABLE` configuration is enabled.
+ * Is available when OPENTHREAD_CONFIG_MAC_FILTER_ENABLE configuration is enabled.
  *
  * @param[in]  aInstance  A pointer to an OpenThread instance.
  *
@@ -774,7 +774,7 @@ void otLinkFilterClearAddresses(otInstance *aInstance);
 /**
  * Gets an in-use address filter entry.
  *
- * Is available when `OPENTHREAD_CONFIG_MAC_FILTER_ENABLE` configuration is enabled.
+ * Is available when OPENTHREAD_CONFIG_MAC_FILTER_ENABLE configuration is enabled.
  *
  * @param[in]      aInstance  A pointer to an OpenThread instance.
  * @param[in,out]  aIterator  A pointer to the MAC filter iterator context. To get the first in-use address filter
@@ -791,7 +791,7 @@ otError otLinkFilterGetNextAddress(otInstance *aInstance, otMacFilterIterator *a
  * Adds a fixed received signal strength (in dBm) entry for the messages from a given Extended Address in
  * MAC Filter.
  *
- * Is available when `OPENTHREAD_CONFIG_MAC_FILTER_ENABLE` configuration is enabled.
+ * Is available when OPENTHREAD_CONFIG_MAC_FILTER_ENABLE configuration is enabled.
  *
  * @param[in]  aInstance    A pointer to an OpenThread instance.
  * @param[in]  aExtAddress  A pointer to the IEEE 802.15.4 Extended Address. MUST NOT be NULL.
@@ -806,7 +806,7 @@ otError otLinkFilterAddRssIn(otInstance *aInstance, const otExtAddress *aExtAddr
 /**
  * Removes a MAC Filter entry for fixed received signal strength setting for a given Extended Address.
  *
- * Is available when `OPENTHREAD_CONFIG_MAC_FILTER_ENABLE` configuration is enabled.
+ * Is available when OPENTHREAD_CONFIG_MAC_FILTER_ENABLE configuration is enabled.
  *
  * No action is performed if there is no existing entry in Filter matching the given Extended Address.
  *
@@ -819,7 +819,7 @@ void otLinkFilterRemoveRssIn(otInstance *aInstance, const otExtAddress *aExtAddr
 /**
  * Sets the default received signal strength (in dBm) on MAC Filter.
  *
- * Is available when `OPENTHREAD_CONFIG_MAC_FILTER_ENABLE` configuration is enabled.
+ * Is available when OPENTHREAD_CONFIG_MAC_FILTER_ENABLE configuration is enabled.
  *
  * The default RSS value is used for all received frames from addresses for which there is no explicit RSS-IN entry
  * in the Filter list (added using `otLinkFilterAddRssIn()`).
@@ -833,7 +833,7 @@ void otLinkFilterSetDefaultRssIn(otInstance *aInstance, int8_t aRss);
 /**
  * Clears any previously set default received signal strength (in dBm) on MAC Filter.
  *
- * Is available when `OPENTHREAD_CONFIG_MAC_FILTER_ENABLE` configuration is enabled.
+ * Is available when OPENTHREAD_CONFIG_MAC_FILTER_ENABLE configuration is enabled.
  *
  * @param[in]  aInstance    A pointer to an OpenThread instance.
  *
@@ -843,7 +843,7 @@ void otLinkFilterClearDefaultRssIn(otInstance *aInstance);
 /**
  * Clears all the received signal strength entries (including default RSS-in) on MAC Filter.
  *
- * Is available when `OPENTHREAD_CONFIG_MAC_FILTER_ENABLE` configuration is enabled.
+ * Is available when OPENTHREAD_CONFIG_MAC_FILTER_ENABLE configuration is enabled.
  *
  * @param[in]  aInstance A pointer to an OpenThread instance.
  *
@@ -853,7 +853,7 @@ void otLinkFilterClearAllRssIn(otInstance *aInstance);
 /**
  * Gets an in-use RssIn filter entry.
  *
- * Is available when `OPENTHREAD_CONFIG_MAC_FILTER_ENABLE` configuration is enabled.
+ * Is available when OPENTHREAD_CONFIG_MAC_FILTER_ENABLE configuration is enabled.
  *
  * @param[in]      aInstance  A pointer to an OpenThread instance.
  * @param[in,out]  aIterator  A pointer to the MAC filter iterator context. MUST NOT be NULL.
@@ -871,7 +871,7 @@ otError otLinkFilterGetNextRssIn(otInstance *aInstance, otMacFilterIterator *aIt
 /**
  * Enables/disables IEEE 802.15.4 radio filter mode.
  *
- * Is available when `OPENTHREAD_CONFIG_MAC_FILTER_ENABLE` configuration is enabled.
+ * Is available when OPENTHREAD_CONFIG_MAC_FILTER_ENABLE configuration is enabled.
  *
  * The radio filter is mainly intended for testing. It can be used to temporarily block all tx/rx on the 802.15.4 radio.
  * When radio filter is enabled, radio is put to sleep instead of receive (to ensure device does not receive any frame
@@ -887,7 +887,7 @@ void otLinkSetRadioFilterEnabled(otInstance *aInstance, bool aFilterEnabled);
 /**
  * Indicates whether the IEEE 802.15.4 radio filter is enabled or not.
  *
- * Is available when `OPENTHREAD_CONFIG_MAC_FILTER_ENABLE` configuration is enabled.
+ * Is available when OPENTHREAD_CONFIG_MAC_FILTER_ENABLE configuration is enabled.
  *
  * @retval TRUE   If the radio filter is enabled.
  * @retval FALSE  If the radio filter is disabled.
@@ -1031,7 +1031,7 @@ otError otLinkSetPromiscuous(otInstance *aInstance, bool aPromiscuous);
  * @returns The CSL channel.
  *
  */
-uint8_t otLinkGetCslChannel(otInstance *aInstance);
+uint8_t otLinkCslGetChannel(otInstance *aInstance);
 
 /**
  * Sets the CSL channel.
@@ -1044,40 +1044,29 @@ uint8_t otLinkGetCslChannel(otInstance *aInstance);
  * @retval OT_ERROR_INVALID_ARGS   Invalid @p aChannel.
  *
  */
-otError otLinkSetCslChannel(otInstance *aInstance, uint8_t aChannel);
+otError otLinkCslSetChannel(otInstance *aInstance, uint8_t aChannel);
 
 /**
- * Represents CSL period ten symbols unit in microseconds.
- *
- * The CSL period (in micro seconds) MUST be a multiple of this value.
- *
- */
-#define OT_LINK_CSL_PERIOD_TEN_SYMBOLS_UNIT_IN_USEC (160)
-
-/**
- * Gets the CSL period in microseconds
+ * Gets the CSL period.
  *
  * @param[in]  aInstance      A pointer to an OpenThread instance.
  *
- * @returns The CSL period in microseconds.
+ * @returns The CSL period in units of 10 symbols.
  *
  */
-uint32_t otLinkGetCslPeriod(otInstance *aInstance);
+uint16_t otLinkCslGetPeriod(otInstance *aInstance);
 
 /**
- * Sets the CSL period in microseconds. Disable CSL by setting this parameter to `0`.
- *
- * The CSL period MUST be a multiple of `OT_LINK_CSL_PERIOD_TEN_SYMBOLS_UNIT_IN_USEC`, otherwise `OT_ERROR_INVALID_ARGS`
- * is returned.
+ * Sets the CSL period in units of 10 symbols. Disable CSL by setting this parameter to `0`.
  *
  * @param[in]  aInstance      A pointer to an OpenThread instance.
- * @param[in]  aPeriod        The CSL period in microseconds.
+ * @param[in]  aPeriod        The CSL period in units of 10 symbols.
  *
  * @retval OT_ERROR_NONE           Successfully set the CSL period.
- * @retval OT_ERROR_INVALID_ARGS   Invalid CSL period
+ * @retval OT_ERROR_INVALID_ARGS   Invalid CSL period.
  *
  */
-otError otLinkSetCslPeriod(otInstance *aInstance, uint32_t aPeriod);
+otError otLinkCslSetPeriod(otInstance *aInstance, uint16_t aPeriod);
 
 /**
  * Gets the CSL timeout.
@@ -1087,7 +1076,7 @@ otError otLinkSetCslPeriod(otInstance *aInstance, uint32_t aPeriod);
  * @returns The CSL timeout in seconds.
  *
  */
-uint32_t otLinkGetCslTimeout(otInstance *aInstance);
+uint32_t otLinkCslGetTimeout(otInstance *aInstance);
 
 /**
  * Sets the CSL timeout in seconds.
@@ -1099,7 +1088,7 @@ uint32_t otLinkGetCslTimeout(otInstance *aInstance);
  * @retval OT_ERROR_INVALID_ARGS   Invalid CSL timeout.
  *
  */
-otError otLinkSetCslTimeout(otInstance *aInstance, uint32_t aTimeout);
+otError otLinkCslSetTimeout(otInstance *aInstance, uint32_t aTimeout);
 
 /**
  * Returns the current CCA (Clear Channel Assessment) failure rate.

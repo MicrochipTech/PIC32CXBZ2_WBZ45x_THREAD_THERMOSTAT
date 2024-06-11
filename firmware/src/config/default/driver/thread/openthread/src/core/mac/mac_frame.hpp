@@ -383,8 +383,8 @@ public:
      * Determines and writes the Frame Control Field (FCF) and Security Control in the frame along with
      * given source and destination addresses and PAN IDs.
      *
-     * The Ack Request bit in FCF is set if there is destination and it is not broadcast and frame type @p aType is not
-     * ACK. The Frame Pending and IE Present bits are not set.
+     * The Ack Request bit in FCF is set if there is destination and it is not broadcast. The Frame Pending and IE
+     * Present bits are not set.
      *
      * @param[in] aType          Frame type.
      * @param[in] aVerion        Frame version.
@@ -503,14 +503,6 @@ public:
      *
      */
     bool IsIePresent(void) const { return (GetFrameControlField() & kFcfIePresent) != 0; }
-
-    /**
-     * Sets the IE Present bit.
-     *
-     * @param[in]  aIePresent   The IE Present bit.
-     *
-     */
-    void SetIePresent(bool aIePresent);
 
     /**
      * Returns the Sequence Number value.
@@ -1130,7 +1122,6 @@ protected:
     static constexpr uint8_t kMaxPsduSize   = kInvalidSize - 1;
     static constexpr uint8_t kSequenceIndex = kFcfSize;
 
-    void    SetFrameControlField(uint16_t aFcf);
     uint8_t FindDstPanIdIndex(void) const;
     uint8_t FindDstAddrIndex(void) const;
     uint8_t FindSrcPanIdIndex(void) const;
@@ -1157,6 +1148,8 @@ protected:
     static uint8_t CalculateAddrFieldSize(uint16_t aFcf);
     static uint8_t CalculateSecurityHeaderSize(uint8_t aSecurityControl);
     static uint8_t CalculateMicSize(uint8_t aSecurityControl);
+
+public:
 };
 
 /**
@@ -1211,18 +1204,10 @@ public:
 
     /**
      * Returns the timestamp when the frame was received.
+     * The timestamp marks the frame detection time: the end of the last symbol of SFD.
      *
-     * The value SHALL be the time of the local radio clock in
-     * microseconds when the end of the SFD (or equivalently: the start
-     * of the first symbol of the PHR) was present at the local antenna,
-     * see the definition of a "symbol boundary" in IEEE 802.15.4-2020,
-     * section 6.5.2 or equivalently the RMARKER definition in section
-     * 6.9.1 (albeit both unrelated to OT).
+     * @returns The timestamp when the frame SFD was received, in microseconds.
      *
-     * The time is relative to the local radio clock as defined by
-     * `otPlatRadioGetNow`.
-     *
-     * @returns The timestamp in microseconds.
      */
     const uint64_t &GetTimestamp(void) const { return mInfo.mRxInfo.mTimestamp; }
 
@@ -1517,16 +1502,16 @@ public:
     /**
      * Generate Enh-Ack in this frame object.
      *
-     * @param[in]    aRxFrame           A reference to the received frame.
+     * @param[in]    aFrame             A reference to the frame received.
      * @param[in]    aIsFramePending    Value of the ACK's frame pending bit.
      * @param[in]    aIeData            A pointer to the IE data portion of the ACK to be sent.
      * @param[in]    aIeLength          The length of IE data portion of the ACK to be sent.
      *
      * @retval  kErrorNone           Successfully generated Enh Ack.
-     * @retval  kErrorParse          @p aRxFrame has incorrect format.
+     * @retval  kErrorParse          @p aFrame has incorrect format.
      *
      */
-    Error GenerateEnhAck(const RxFrame &aRxFrame, bool aIsFramePending, const uint8_t *aIeData, uint8_t aIeLength);
+    Error GenerateEnhAck(const RxFrame &aFrame, bool aIsFramePending, const uint8_t *aIeData, uint8_t aIeLength);
 
 #if OPENTHREAD_CONFIG_THREAD_VERSION >= OT_THREAD_VERSION_1_2
     /**

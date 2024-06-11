@@ -1,5 +1,5 @@
 /*
- *  Copyright (c) 2019, The OpenThread Authors.
+ *  Copyright (c) 2024, The OpenThread Authors.
  *  All rights reserved.
  *
  *  Redistribution and use in source and binary forms, with or without
@@ -26,50 +26,29 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-/**
- * @file
- * @brief
- *  This file defines the OpenThread cryptographic random number generator API.
+/*
+ * Helper functions for running c++ without the standard library
  */
 
-#ifndef OPENTHREAD_RANDOM_CRYPTO_H_
-#define OPENTHREAD_RANDOM_CRYPTO_H_
+__extension__ typedef int __guard __attribute__((mode(__DI__)));
 
-#include <stdint.h>
+int __cxa_guard_acquire(__guard *g)
+{
+    return !*(char *)(g);
+}
 
-#include <mbedtls/ctr_drbg.h>
-#include <openthread/error.h>
+void __cxa_guard_release(__guard *g)
+{
+    *(char *)g = 1;
+}
 
-#ifdef __cplusplus
-extern "C" {
-#endif
+void __cxa_guard_abort(__guard *g)
+{
+    (void)g;
+}
 
-/**
- * @addtogroup api-random-crypto
- *
- * @brief
- *   This module includes functions that generates cryptographic random numbers.
- *
- * @{
- *
- */
-
-/**
- * Fills a given buffer with cryptographically secure random bytes.
- *
- * @param[out] aBuffer  A pointer to a buffer to fill with the random bytes.
- * @param[in]  aSize    Size of buffer (number of bytes to fill).
- *
- */
-otError otRandomCryptoFillBuffer(uint8_t *aBuffer, uint16_t aSize);
-
-/**
- * @}
- *
- */
-
-#ifdef __cplusplus
-} // extern "C"
-#endif
-
-#endif // OPENTHREAD_RANDOM_CRYPTO_H_
+void __cxa_pure_virtual(void)
+{
+    while (1)
+        ;
+}

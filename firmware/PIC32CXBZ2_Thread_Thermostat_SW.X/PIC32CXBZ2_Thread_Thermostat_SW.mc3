@@ -1,4 +1,4 @@
-<config configName="default" projectName="ot-sample-app-ftd" configVersion="1.1" device="WBZ451" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.6.1">
+<config configName="default" projectName="ot-sample-app-ftd" configVersion="1.1" device="WBZ451" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.7.1">
    <usedPackages class="java.util.ArrayList"/>
    <usedClasses class="java.util.TreeMap">
       <entry>
@@ -4356,15 +4356,6 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="OPEN_THREAD" name="OPEN_THREAD_DEVICE_ROLE_CONFIG_1"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;OPEN_THREAD&gt;
   &lt;OPEN_THREAD dnOrder=&quot;0&quot; id=&quot;OPEN_THREAD_DEVICE_ROLE_CONFIG_1&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/OPEN_THREAD&gt;
-&lt;/OPEN_THREAD&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="OPEN_THREAD" name="OPEN_THREAD_DEVICE_ROLE_CONFIG_2"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;OPEN_THREAD&gt;
-  &lt;OPEN_THREAD dnOrder=&quot;0&quot; id=&quot;OPEN_THREAD_DEVICE_ROLE_CONFIG_2&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;/&gt;
   &lt;/OPEN_THREAD&gt;
 &lt;/OPEN_THREAD&gt;
@@ -10123,7 +10114,7 @@
       </entry>
       <entry>
          <file>..\src\app_config.h</file>
-         <hash>c2d35f600a250b635824db249422321b881c09c08860bff8b3ade2e72c3ce4e6</hash>
+         <hash>edd24ea8f4d6c95043e81acdfdd1b22b13ddadb97ad96c4d7452b65b9b56c402</hash>
       </entry>
       <entry>
          <file>..\src\app_idle_task.c</file>
@@ -10171,7 +10162,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\definitions.h</file>
-         <hash>bffb35c51088dae6b6b1f7a84b88df5ad232e047a69abe82060b3016309697e2</hash>
+         <hash>62f36c41295d0b66d6fdc75a8e71e34a25a58acbe81b8dd29ebe45760c9173f5</hash>
       </entry>
       <entry>
          <file>..\src\config\default\device.h</file>
@@ -10187,11 +10178,11 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\IEEE_802154_PHY\pal\inc\pal.h</file>
-         <hash>d8c0da049a693ae22381db2d8234c63e1a949119687d38efcf65e418d5744963</hash>
+         <hash>4da508ddc3ba665962966e9780b20d57817dd776623d2f6257e7b63c23034d15</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\IEEE_802154_PHY\pal\src\pal.c</file>
-         <hash>b88b668e110d392d65fa6f16b094bb29a2d8ebc10d1a818b5a86887b4cd941a9</hash>
+         <hash>90deee4776157aa2e5314aa01aebb67887a48d906b3a4eefc8586fd1b849f703</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\IEEE_802154_PHY\phy\inc\ieee_phy_const.h</file>
@@ -10199,7 +10190,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\IEEE_802154_PHY\phy\inc\phy.h</file>
-         <hash>f5d4781f4faed81150040ad4c4ccff78cc8f583fa28a5e6f07f8664ec4c3decd</hash>
+         <hash>e9fe74456b5f84955fe0e9ce2e7e037bba8e79c96160eadf0a663566e69429bc</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\IEEE_802154_PHY\phy\inc\phy_constants.h</file>
@@ -10270,8 +10261,8 @@
          <hash>5217965f6720b4fdf717e99ce9df4f2c9fbd82bbbc9655847166d1eefa806fee</hash>
       </entry>
       <entry>
-         <file>..\src\config\default\driver\lib\lib-ieee802154_phy_pic32cxbz-v1.1.0.a</file>
-         <hash>6deae94b6f128e1ea25b86853af1ee275a11ed8856e0162d5a86b276e649019e</hash>
+         <file>..\src\config\default\driver\lib\lib-ieee802154_phy_pic32cxbz-v1.2.0.a</file>
+         <hash>2573ea9d0d9595a16eb3d0bcc45a3ee258db8afc0dd7874ea815f353e271772a</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\pds\include\pds.h</file>
@@ -10286,28 +10277,24 @@
          <hash>65985bd7c2c12421abed6cacf53b1a0fe7d490109651bcfc31c02c13594c7e75</hash>
       </entry>
       <entry>
-         <file>..\src\config\default\driver\thread\inc\crypto\aes_alt.h</file>
-         <hash>69f1cb32f61511683ef5d9cc3cf5781c07fb4d6fb81bdba9977167e2f09492ef</hash>
-      </entry>
-      <entry>
          <file>..\src\config\default\driver\thread\inc\crypto\check_config.h</file>
          <hash>8c891fc36ec2a7d3aff30d05024052fdbac4f7088a5f60001292fdbad6d81536</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\inc\crypto\pic32cx-mbedtls-config.h</file>
-         <hash>01b9b340f8e19dc9cd955c6ea75d4ce5eb43990c34828503c5112684224326d5</hash>
+         <hash>5e1e0f6a525678bd5b6642746efa757cf1155e92e47a6b6d242d4cb859ec2dcc</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\inc\flash_config.h</file>
-         <hash>c1014857f9f1860fd0156ea672c99d2b462453c3820d6e1078d727bdba6593b8</hash>
+         <hash>a4f93bab6fefdca3448577cfdaf13a9ceeb667df4353845a6f0a9080a78e845d</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\inc\openthread-core-pic32cx-config-check.h</file>
-         <hash>7930fba71ad4bc99af14e566d38e17069ca6fac72e57ff92aede266c10893527</hash>
+         <hash>f423ff77bef4e2a0a04ece2dec9b63b58dd41b2c73caf2b8e21fb8fc67c174fb</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\inc\openthread-core-pic32cx-config.h</file>
-         <hash>c9c77adca4ef3867acb02d4cbe556eb705989e049401c5239e3d91f34921ee8e</hash>
+         <hash>f31320f4245b3c4b79ed92f526163cf36ed7e985ed4140f2d817bd924160d0c0</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\inc\openthread-mbedtls-config.h</file>
@@ -10315,15 +10302,15 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\inc\openthread_stack_config.h</file>
-         <hash>fd031d0331b242296c253af987f4e7d99f0e39d3df7fb98020b565514a1c7a8c</hash>
+         <hash>7cd057d2bc35bf9f6e5cc52e1cd460665eb913fbf5610ec27a63755f264e5a33</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\inc\platform-pic32cx.h</file>
-         <hash>d144a3b7084b1b29ab6103fea10576f26aacf425498b028ed693c76455758883</hash>
+         <hash>266d7f4cf5d4840336136558a4c7f269d24ae465e4c4fcb8b161bfb47dc7a573</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\inc\user_row.h</file>
-         <hash>564de3c6cf4592b298e7776d37fff88db47aa16ade1d10d6bd4992942fa89440</hash>
+         <hash>7f4b8396b22dec80e462f0a090e7f65f1c8a6979cc913f451d433b044ba6b8c1</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\examples\platforms\openthread-system.h</file>
@@ -10382,14 +10369,6 @@
          <hash>ed26ad759abf26e6fdb3b7c68fa863e1a786663ad5b2fb2d95430f6658f2d9f9</hash>
       </entry>
       <entry>
-         <file>..\src\config\default\driver\thread\openthread\examples\platforms\utils\uart_rtt.c</file>
-         <hash>116f60618050518d4f5e79a52bcdcd72a541cd3f9d2eee710669e4e1c9427b81</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\default\driver\thread\openthread\examples\platforms\utils\uart_rtt.h</file>
-         <hash>8ac2a5fe6ed85dccbbe00dfd8ab52aca89291029ea050576c1fb505c442250f0</hash>
-      </entry>
-      <entry>
          <file>..\src\config\default\driver\thread\openthread\include\openthread\backbone_router.h</file>
          <hash>8592dfe3abaee2972ac0d391158fb044481c75cc2756e2317f65dd6e6d249015</hash>
       </entry>
@@ -10399,7 +10378,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\include\openthread\border_agent.h</file>
-         <hash>afadf0f23a10fed6d017736021338f2676f63e4c8aab04470cdbf3ebaadc4507</hash>
+         <hash>574168e16b5764144a2011776cefb9d6902c3c3f88ff9f86320e9217e2c5ab27</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\include\openthread\border_router.h</file>
@@ -10407,7 +10386,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\include\openthread\border_routing.h</file>
-         <hash>c0fa154c8fa578230204048945b517f72c9a0ae0deb9f5afcefc458977e99cca</hash>
+         <hash>7189cd9e46a234ee74f193ba300da47caa7670a90060033f1bde076c86dde347</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\include\openthread\channel_manager.h</file>
@@ -10447,7 +10426,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\include\openthread\dataset.h</file>
-         <hash>12b90ab81a08f7bf3f6fd9f3a82d3e6389bfd49762c1929e9477aa4fe163255f</hash>
+         <hash>6991645fdac1bbbd5377b034041358ad74d51199c7e39e2666c0d0586b6bf7d1</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\include\openthread\dataset_ftd.h</file>
@@ -10491,7 +10470,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\include\openthread\instance.h</file>
-         <hash>bb1849cda9a38d7df1d6a9937f27a28983d5541ed087f9181988479c383f4089</hash>
+         <hash>15cbaeb5b1f0111e047cd036b9ad5648ef3a019009ed2d5746d3576d44615a72</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\include\openthread\ip6.h</file>
@@ -10507,11 +10486,11 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\include\openthread\link.h</file>
-         <hash>e07c0041f6041ca7ed0b19706c4f8480c38e59618d857db1a7496fcc87d1cf6c</hash>
+         <hash>0e6287d419ca895baa46a9bc59d5bafa344f312f9a9cbaacfc18dedfa9258e38</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\include\openthread\link_metrics.h</file>
-         <hash>075a77f16058246f2fc49219cca3ac7422b92681dd0e545fa60d689700a6f4b9</hash>
+         <hash>6583a129aa27e56a2b9c24308c2bea74f5b648144f22b2e5775beca38157a626</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\include\openthread\link_raw.h</file>
@@ -10523,7 +10502,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\include\openthread\mesh_diag.h</file>
-         <hash>4e0b9fc833553ec28437a189f76c68653b014f93295579e5020d2321d0927161</hash>
+         <hash>b23fd5badbf90acf48813367d239ccbdb567b1fb506d8d76131e5f9b93c83109</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\include\openthread\message.h</file>
@@ -10543,7 +10522,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\include\openthread\netdata.h</file>
-         <hash>32705bb228912fb4b8a12c8bb2c7eef729e6c5008f49e40af5d8747bb90b8c51</hash>
+         <hash>31b6cfeaab405a82b7603054fe0def2d1c84d4c6190cb0605e418f08e9549aba</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\include\openthread\netdata_publisher.h</file>
@@ -10551,7 +10530,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\include\openthread\netdiag.h</file>
-         <hash>5a8025c2da15c5ddeca9ec46cdb255615e3a60ff6c467a4f1d0da0e46ef3b87b</hash>
+         <hash>9b3f3d1b012b391bbb0d611ec74a1218a5a34fcc932c8d9cea14dd3c70ac8d4d</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\include\openthread\network_time.h</file>
@@ -10627,7 +10606,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\include\openthread\platform\radio.h</file>
-         <hash>fdee9a128c2c667c1fbbd8bb3886fbf9cbf85822707e63c7877fc8744561ccb4</hash>
+         <hash>4ddd8901719270921efd8e33ffca8eec6ee103c6fdc15b8e3aeb9087a1b270d5</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\include\openthread\platform\settings.h</file>
@@ -10639,7 +10618,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\include\openthread\platform\time.h</file>
-         <hash>81b3fc877eb9b76e0eb35d8914dbb76de2101541c76ab3fcc97e8bb69dc8aba0</hash>
+         <hash>a2b002b814b96e7605824fed674204ae5472e660480516140c5335b454f07e43</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\include\openthread\platform\toolchain.h</file>
@@ -10655,11 +10634,11 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\include\openthread\radio_stats.h</file>
-         <hash>725706f4eaa9a02bee2cf469d562920649d9f4ee18cea183735df776d9dc7812</hash>
+         <hash>1184cc4201e0cff33fd0769f30c3dd374443833de60a8e3989f10a2e2470028c</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\include\openthread\random_crypto.h</file>
-         <hash>72ed7385facc894299e4a443fa05430764b3b66c4ee2d938b39d9ef4044a6b7d</hash>
+         <hash>3423dcbd031687aa2e791143a8f5c719d4fe93b1bf40f001e317e04de658f343</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\include\openthread\random_noncrypto.h</file>
@@ -10683,7 +10662,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\include\openthread\srp_server.h</file>
-         <hash>5bc365e7b2158d7b37b849c02fdb78616fe324f6bdcd9a905fe9fd6fe27e353d</hash>
+         <hash>a051a0154486aa86d5f6c5ac34a5448241766ef965b978d6b9d6497b6f5a9f96</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\include\openthread\tasklet.h</file>
@@ -10691,7 +10670,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\include\openthread\tcp.h</file>
-         <hash>efa39ab94d14a7ac6d0cc19068d4a0d1d8e1e8647baa10c58063f7aaffb1d53e</hash>
+         <hash>442ccbe0f0b32cbbb9bf234e985f5be8e382a14f1fd7b05994894b12beda7bc1</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\include\openthread\tcp_ext.h</file>
@@ -10699,11 +10678,11 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\include\openthread\thread.h</file>
-         <hash>e84f9f4cccf4a1cfb3e6a5c328c2d48be8a8c12c08144a6c27fa9bdbb86bed7e</hash>
+         <hash>059c6d44a6aff097ed6190d2ee126208c860b4c7522005952851af271bc0937f</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\include\openthread\thread_ftd.h</file>
-         <hash>15e1a5ef0b02159d48252338a8b90ff74ca136fa1d5e572650b4a16d4f6e7b46</hash>
+         <hash>5aacf2fdcf9dd30663bd556b53c495493dd4da43514728249c2fbdf80f6bbd85</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\include\openthread\trel.h</file>
@@ -10819,11 +10798,11 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\api\link_api.cpp</file>
-         <hash>d1c0b3d4e2c51ec9429f21c62dbe7d9c991fa5d84192a2366ccc17f1f719144d</hash>
+         <hash>4949ee22180c099d09d104ab482989f7ce3a5b0d311ba0411cb8fc4ba8198ed5</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\api\link_metrics_api.cpp</file>
-         <hash>21185a31ba850c2459820c2803404c4aa24c8e72c0e1a0933ad829124b8b0bbf</hash>
+         <hash>5329aa02dd31b8d782365ca6b855f8e1d028100fec4dffb4ed4387c5ed1717d2</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\api\link_raw_api.cpp</file>
@@ -10835,7 +10814,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\api\mesh_diag_api.cpp</file>
-         <hash>966bbbffd4a6a3179933cdbb03b4b6e420cf4d2b977f04f5642a3082de3a36c6</hash>
+         <hash>5f18843b9fa4c7976073fa7bbe1c74d11fee54b79bddaa6d4e21c8695add8ed6</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\api\message_api.cpp</file>
@@ -10899,7 +10878,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\api\srp_server_api.cpp</file>
-         <hash>02cb2dbf279f22c971be33f15e44c8faa6600866a7d13b410f04b7e8297ae837</hash>
+         <hash>3697d271cf60c6950c2c9feee8288084caa2ac5568a9ff5befa3c9f6bd3b5c37</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\api\tasklet_api.cpp</file>
@@ -10915,11 +10894,11 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\api\thread_api.cpp</file>
-         <hash>f7880c3e4d1378bcf03537d660d67fb05ed555872f900b765cfa5d8373a9f022</hash>
+         <hash>0e81a8740d53df5aa6d43aea76ed610780a02da322e1d165a683f315c7b60865</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\api\thread_ftd_api.cpp</file>
-         <hash>0ce4a975336d1d0292f8fe14897127df41c042563f0cefd1f43dbed9669a0d23</hash>
+         <hash>1f337d108a95d7b679c0f5bbac139eccd25b531331abfa6f234aadd003e2599c</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\api\trel_api.cpp</file>
@@ -10979,7 +10958,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\border_router\routing_manager.hpp</file>
-         <hash>293c962c083ef7623ab27afa32f5733e3b09419bbea7d61522d3074c977ef6f8</hash>
+         <hash>e8c4b6cb92e957153dfa4953fc685d54d1b05ec7028263a1b94c77a438beea91</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\coap\coap.cpp</file>
@@ -11143,11 +11122,11 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\common\instance.cpp</file>
-         <hash>fbdc3d1d3d997ead084ae709dd0b5647f4ff33f51ced9f24b347e82c586f09b6</hash>
+         <hash>300f5f97d34f5181623d8e81e7e1a11d766639639dfa3f44786dbc19d9b0219b</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\common\instance.hpp</file>
-         <hash>f9538d008553cbe72880bace4c3f14891061d21a4dcf9d57028c4878d5924a8e</hash>
+         <hash>7e1188a8ee92e319d97ec273e24049226580edf487d2b5a7173bc47195412844</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\common\iterator_utils.hpp</file>
@@ -11155,7 +11134,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\common\linked_list.hpp</file>
-         <hash>e74ecfa5e6a3747f0b6c20a18ea52c7ae5cc3ac13efa96fa81695f5713e2427f</hash>
+         <hash>e2db31f51f694882b6a84488f2d7d38a100f4756141845cb1e4a0de07632f1a5</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\common\locator.hpp</file>
@@ -11195,7 +11174,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\common\notifier.cpp</file>
-         <hash>8473da78aeb8666aab48aad22e6ec7dc4a6c1c6c683c163c3b7e8a68a09aaa5f</hash>
+         <hash>395b2077a735ba5e9192318c82b3ca1782245b067680305ac9319e8d433ea7a1</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\common\notifier.hpp</file>
@@ -11279,7 +11258,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\common\time.hpp</file>
-         <hash>b2d2e90473dc3e63436112df42ddbeccb1ad5e191835f2fb0c99a72d84581cc4</hash>
+         <hash>6cea577276b0ab328b1530cc5308cf105002fee79219aec36e87191715efc4a7</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\common\time_ticker.cpp</file>
@@ -11299,19 +11278,19 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\common\tlvs.cpp</file>
-         <hash>7dcf67229ee8a898c232f08f7fc36ff430bf14cbb5d0df06ce1ab29aff4fbe22</hash>
+         <hash>8182e881eaffd6b7a8a61f11f7d40a78b7303f7516cac4f0aece1cf8e38704b0</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\common\tlvs.hpp</file>
-         <hash>57a1c066f2779f373c289b85b9f31fdda833c70c1eb2fd5d7136b76d4e5cf819</hash>
+         <hash>e4e522d54c25b58e08f543fcdb1db2050c9a87f7ebbc7de47f6c3e67aad6eb67</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\common\trickle_timer.cpp</file>
-         <hash>dbd153fa3d8c3ef84209f7d7af72de1b0d8ecebfa82f76aa7e190d44e5e487e5</hash>
+         <hash>ab9fc9351258392243eb240ec8a2e523cfd6d54d2627c859070672fb03ce0576</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\common\trickle_timer.hpp</file>
-         <hash>2690108b96d5429e2b384ecf0b640b7176ea1927c2beeac2e52ac96a13d5d2bf</hash>
+         <hash>528a74ba4ed1bb50c2a258a19cfd171edd2da4e6fa5dfc8fdf022ac0c5114e0a</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\common\type_traits.hpp</file>
@@ -11335,7 +11314,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\config\border_agent.h</file>
-         <hash>51a7f9398c75e5a0821dbcc30ea453a530b19dbdbff28975689d2e08485ee423</hash>
+         <hash>6e3ccdb3a3f7a56b8bf62923236d91348f872ce0aa85f9df68f7d3869e187547</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\config\border_router.h</file>
@@ -11343,7 +11322,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\config\border_routing.h</file>
-         <hash>ab02882d26841ff79a3cb9cee17e402f85a095a04e0fbe96f4ba03a6c3f024a2</hash>
+         <hash>b69bd616938ca8ae9c610bac1263e2ed1ebf5155159ccff830464c7d2424334f</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\config\channel_manager.h</file>
@@ -11391,11 +11370,11 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\config\dns_dso.h</file>
-         <hash>2bca62bf63d5307b5e278701bde586d2c40e60cd3a9a323df470e1a6dce9d71a</hash>
+         <hash>30bdd5ec0c35449f78b1ed8eac0556dad00f2814388fb6d9d880e2baaadef0e5</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\config\dnssd_server.h</file>
-         <hash>73727ea1d15c6bd104e15c87bfe4108a84bf0ce15651cbc89bf6d4eb111c6113</hash>
+         <hash>81a31d34df5c339c1d08cfcf8a36f750605d1f47bbec8f9af2c7b5dff06e6707</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\config\dtls.h</file>
@@ -11412,10 +11391,6 @@
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\config\joiner.h</file>
          <hash>670bc7a172b061cd9e1aba7cec80a30a7d5ad6ab7ba755090a9bf7d0f1fa2561</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\default\driver\thread\openthread\src\core\config\link_metrics_manager.h</file>
-         <hash>5ed689cb778e0b78e3ec60581be65918a5cba038b3e8e36c28c9cb70acbde128</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\config\link_quality.h</file>
@@ -11439,7 +11414,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\config\mesh_forwarder.h</file>
-         <hash>ccd86681457b8a52a474167d40143326ebb4bd924c79d2bbe6313705f296a00b</hash>
+         <hash>6be0aa11e6e89e4a2f5a9f7659b366df20e9c506efdc9c77ed9c8bb5ec490369</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\config\misc.h</file>
@@ -11447,7 +11422,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\config\mle.h</file>
-         <hash>c730a69ecdf4bce95eeb8c1826ee61b2bf6b2752b44b1971791c6e863f49bccc</hash>
+         <hash>9efe75bbfd531a28f205a9cff2c4549d149026d67b8fb5102ac0b9da2b0a7a85</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\config\nat64.h</file>
@@ -11591,19 +11566,19 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\mac\data_poll_handler.cpp</file>
-         <hash>5f23cf9aa7287071d2b4cb1562f5b08394d0cca4f3574e917f18e3d4ba41499b</hash>
+         <hash>b29f1f39aa47ff6bd2ea95ea65b9980147a8665341434a979b10064d634b9a45</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\mac\data_poll_handler.hpp</file>
-         <hash>70b41812b99c7b2338d87ce77dd6a15852436a1b87bd1ce2111339aa882e74b6</hash>
+         <hash>7c2eae65e78e069e0f3320683c052b457521e21e0ea13a0a5639d4d7ad15af9b</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\mac\data_poll_sender.cpp</file>
-         <hash>68f58467785668218e246d0a1c005ee0aaed7b472b715bfbda83263ed888b6b1</hash>
+         <hash>f334f2aa403047614e879d42bb162d37f35514ebf8a69f81c23c6f0cacb4cc36</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\mac\data_poll_sender.hpp</file>
-         <hash>951f04b6a50ac5b35102d862ce866b76298bb39273d0fe9102c52dbf6cff2bfb</hash>
+         <hash>87c5befecd8dd70df99a4be89a2bd60139aa0796874bd4ab6e7c9bfa22618082</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\mac\link_raw.cpp</file>
@@ -11615,15 +11590,15 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\mac\mac.cpp</file>
-         <hash>4df0840b0daea735cd1d161223c78b7d47570a759a5f3ab2eb26a153f96ecd7e</hash>
+         <hash>2877216b80b6fa20ac6195cc998695d3995fd36c1f39287066c817846d22ef00</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\mac\mac.hpp</file>
-         <hash>c3fd27c517daf4c156ee2d996ed507386d2d2d4104a1dd753d4b64ccf135b3e2</hash>
+         <hash>b4854205f37a25d09f9850fd1cbb6087d4b14af123e881d56ac580aea5019b26</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\mac\mac_filter.cpp</file>
-         <hash>9fd31de4a8c2bf1d6f6568cfbdff9616e42f171d03b512887f6a66069db62b7e</hash>
+         <hash>489c6a8efcf255bbe13a56aa4148efdc5c443a816818cdd3f3b1c7fd73ee8712</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\mac\mac_filter.hpp</file>
@@ -11631,11 +11606,11 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\mac\mac_frame.cpp</file>
-         <hash>e00f88ab3bf79c895deb99bc722fd9a3f74192c6dca156dc569052927e8ec885</hash>
+         <hash>cbbdbc8e4b814fa5b6321a173c724c84925071e9418a9650887647b6a53b760a</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\mac\mac_frame.hpp</file>
-         <hash>f8ac22f03d4528d4f67a2c6f5741f34a695787f9cb7ddb415363764cfe4c304c</hash>
+         <hash>0fc021772ef52ecb0be1c276a9dc15d6205ed8ce6e64f420a6a9ccb5aa4f8b71</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\mac\mac_links.cpp</file>
@@ -11647,19 +11622,19 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\mac\mac_types.cpp</file>
-         <hash>a37d0e6575500e0599b806d0277b5714035317d03cdb81398331eabb7a70a32d</hash>
+         <hash>915bc20b28ad909e89d0ff14fc3a7c403db39a219299a5373afacac61b3fd31a</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\mac\mac_types.hpp</file>
-         <hash>b442a5e24d72e20d33c541552809e1436ff7dabd229c89619c5531220be6f12b</hash>
+         <hash>89fbae5adf1188835132608d70fe1b59d15ad371ffe8b4a11c4f93ad48445e7c</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\mac\sub_mac.cpp</file>
-         <hash>4894211645cf8f18d2296364f880b5b030146b2ebeffd500aa5735f28d3e9d79</hash>
+         <hash>986707ee99c69ae4762b799c85d1b7f7545e277f1c6d91090af61a33e2574362</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\mac\sub_mac.hpp</file>
-         <hash>2878dc6039c104aa8062049b748d5d9690aa365985f796d1d99334562374f550</hash>
+         <hash>abfae49f2a60be4beaeffdbfb79394cbf119a943cb10b7fe9728e4038470b656</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\mac\sub_mac_callbacks.cpp</file>
@@ -11675,19 +11650,19 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\meshcop\border_agent.cpp</file>
-         <hash>3d3ea517e8a9df17d198e24b7b2c35e35982313ccc0becf26e20de6753192f7b</hash>
+         <hash>52d64d1adfbcc2b49abc9aa28f65412d75c15770504e20683f3190806a9c8d0f</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\meshcop\border_agent.hpp</file>
-         <hash>41db072dc7808e5c0bc47f88c69185366b1ab63d915146be47177cb5185eef89</hash>
+         <hash>473bafc14f18468a263d88c93f0d6989ca596a1a8af2f51bc4b6af247847089d</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\meshcop\commissioner.cpp</file>
-         <hash>0e2a336277243c54c0feb1e7403ab3f3277d9593ab2e794dd2eb04bda10aef6b</hash>
+         <hash>8743d5ff2c97c58a7a225accdbef73b8d31a23e0214c77e66fe03b62225c2997</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\meshcop\commissioner.hpp</file>
-         <hash>5800f46d278a5ff478425ae449136b3581c7f74d8727403a7401ab846dcf01f7</hash>
+         <hash>8073f6685ad178febd27223a9ec8b3606f0ec458ccff6e7d72abcdfa310d9e7e</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\meshcop\dataset.cpp</file>
@@ -11707,7 +11682,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\meshcop\dataset_manager.cpp</file>
-         <hash>dfa2ee13103ddca1f17ded510fc0eda34e05858696c9c5143e9e0980bd69c693</hash>
+         <hash>b6a4d46d0dd3987389acb8c19dda06e5a2a5518915e22f27d5628fc31ef60863</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\meshcop\dataset_manager.hpp</file>
@@ -11767,7 +11742,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\meshcop\meshcop.cpp</file>
-         <hash>7ad5e53c53cd9bf03859160b9b9562ab371a0cefdcbb8d3eb9f4ee381f572360</hash>
+         <hash>e33623b8e7986e18ba94d4f43a5363c555e9a9e2840c5b866b0875e1baee1871</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\meshcop\meshcop.hpp</file>
@@ -11783,11 +11758,11 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\meshcop\meshcop_tlvs.cpp</file>
-         <hash>c346fd99470f1abdb22f8d5227594f80b4dd53f932f489ab22b0a16a9a5524a0</hash>
+         <hash>1be08862e1faf02d77f44063dc397aa5de6e96645f4a5b6d984aad85ca49f78f</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\meshcop\meshcop_tlvs.hpp</file>
-         <hash>20df91b8f277218674383f5427586796f63c55bc67f3998aeac1552c9c7b0667</hash>
+         <hash>dba4e3afbc01e5c8ddd2554ae8a96e1bffc365d044aaa71e7b721d18e56f6720</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\meshcop\network_name.cpp</file>
@@ -11843,15 +11818,15 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\net\dns_client.cpp</file>
-         <hash>979e0cfc33b269be03f50cf6b90e58e71d0919c193f7f0c51f11dcbc023b1fe9</hash>
+         <hash>1e3af9ad6758342ab534b100aaeb8bf3af8c05491332f617f26497e3050056e6</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\net\dns_client.hpp</file>
-         <hash>d398ffe766925c60eb2856b5506646d468ee51432c1b6f6a5e2a7207d960e5d7</hash>
+         <hash>953fbf606a51f476dc3c5be5ab4b274e5f9737bf71d1c973b52f793d41381e84</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\net\dns_dso.cpp</file>
-         <hash>237695dd235acaa0b2b19bcc2a0b75cb359b6f06316e092a7a852759751cdfdd</hash>
+         <hash>5afb30e0ea3fd8bb5446ce4ce770361b9bfdc9fddcfe75edefd1017b3e4f7d1a</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\net\dns_dso.hpp</file>
@@ -11863,19 +11838,19 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\net\dns_types.cpp</file>
-         <hash>740bc5d40159d54ae30fef669a1a24e5a79eae7bf56908c65f06294719580a10</hash>
+         <hash>7292bcc83236a19a5d5537dffd2255c99d1b284439a04c03121af93024850338</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\net\dns_types.hpp</file>
-         <hash>cfe27b81da36ee76e4194f624a7c213359be9d24774fb43b1d322d0bf3a7b02f</hash>
+         <hash>ce7b4c5162aa438e2b18cc92a6c3d975da53951bf182ca6c471d5eba52a946fd</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\net\dnssd_server.cpp</file>
-         <hash>e310c82d8331cf5fe30a2f96a73564d5bac3b157165d744ace2384723538a61b</hash>
+         <hash>9418a7bbb16960090e6e2b8914118907baed8fef78e4202151ced6ebedf5d8ff</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\net\dnssd_server.hpp</file>
-         <hash>f864bf91342da5762c88b6f863c3266fbd424b64808233b5e9ad149563850e98</hash>
+         <hash>3de749b82e6b38ec829b692816b366191620d50984793afed2a1059af952ece7</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\net\icmp6.cpp</file>
@@ -11895,11 +11870,11 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\net\ip6.cpp</file>
-         <hash>70b1b86e168bc673e1c31cec90c56d78e63bfb8a0aa45faeb177ae7da4b2d42c</hash>
+         <hash>a872083b7b05403b586b18cef500592882f417b9f7de942da7cd0425313c880e</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\net\ip6.hpp</file>
-         <hash>abfc9b9e1271709f89cdb5117e98eb81aede4651a3bc3149e103c1f1893de58e</hash>
+         <hash>83127b1f60c9132fcc947ceccc45cc15dfc8945c165648e428f855569b7466cc</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\net\ip6_address.cpp</file>
@@ -11927,7 +11902,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\net\ip6_mpl.cpp</file>
-         <hash>a1ff1a91f0fead0c13fd9f1f3765f34cb47583ffaa09f963308ebd8e876e1819</hash>
+         <hash>c4374577a37fb78287b3a4f876302650582336e55c8d392284a8fbf454f98b9b</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\net\ip6_mpl.hpp</file>
@@ -11939,7 +11914,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\net\nat64_translator.cpp</file>
-         <hash>fd24aed0fe0e92a9819c3f486218290d314aedff15e7774949696ecb6e334359</hash>
+         <hash>de07e0fe338bbb737d24eae0409238075408ee81c9bf32fb56944593b8e38d71</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\net\nat64_translator.hpp</file>
@@ -11995,15 +11970,15 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\net\srp_server.cpp</file>
-         <hash>02996d04da0013a20684df5ca6454fb780b754a0543e0d65ae4fa92b28d91308</hash>
+         <hash>04d25d701bc8c29ad12eb355817e3a6b3c4ca695d187f3a1a41b2d153ff0799a</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\net\srp_server.hpp</file>
-         <hash>113121b90014ea35e7733e98d6790a78faf1a2284c7bf9a957af6d04aebcb69a</hash>
+         <hash>e24faaf869daeca1a9534e48c757dfedff61ca210a62c9f54e5fe25aee5a8cd3</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\net\tcp6.cpp</file>
-         <hash>8a5a41a7987f8e09c2d65367c22947b22a4b4bbe3fc8ab18185e21c157ec647e</hash>
+         <hash>8708cda0e12fbfa0bf241cd1acf20b7f8e64f7942bea2a6178f2adc1e019e9e0</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\net\tcp6.hpp</file>
@@ -12027,7 +12002,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\openthread-core-config.h</file>
-         <hash>60eccdaba56cc0ca76f0e8e9ce6844265fe7fa6add0439e25a463d13e7d77d52</hash>
+         <hash>ae4e34ecb38e4a35fcb2e9b5919c09ab540b99ebe73a209c59e1dda2f926ed24</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\radio\max_power_table.hpp</file>
@@ -12075,7 +12050,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\address_resolver.cpp</file>
-         <hash>cda1294ad80e9a60255b27a22897b6c9b8d9dc4a6ef2cfde3fc3f3587eaf330c</hash>
+         <hash>fc862af61b43237007a65642595587af9b51e8361a97104c2260d4501b94aeae</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\address_resolver.hpp</file>
@@ -12106,14 +12081,6 @@
          <hash>ace0fb94184e8263e1260168f5f3b44d57e79ee9dfaf0f8d3c53a073f7fd7b27</hash>
       </entry>
       <entry>
-         <file>..\src\config\default\driver\thread\openthread\src\core\thread\child.cpp</file>
-         <hash>33dcbcacf3ad9cc51ffba8360b599111b37c9e0e04e165927b2b4a92ae1610a7</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\default\driver\thread\openthread\src\core\thread\child.hpp</file>
-         <hash>bec94e2de8ac993dd9461e5435e8a11726716a8a47c0a010588523aeb9f9b78d</hash>
-      </entry>
-      <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\child_mask.hpp</file>
          <hash>857ecec12adb49c2c58c2b21bc2c41611c45041466287d1a528a1f2880a0ecc3</hash>
       </entry>
@@ -12123,7 +12090,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\child_supervision.hpp</file>
-         <hash>f670ee31a38bd95e74ccb57c818dedcbcb3bcd918641d8d8cd16398a685040cf</hash>
+         <hash>2d33f5b9cd6aa349f8e499782e85d9157af99784f4ab28d43d5e4e4090e4a856</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\child_table.cpp</file>
@@ -12131,15 +12098,15 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\child_table.hpp</file>
-         <hash>161f0475d4fe5b10486584b71e0a474866fba5b0c646d91c4e27d92ace12703c</hash>
+         <hash>05b378a382b59a775f913411737738ee65f1eafbf6d68d01791fcea1711bba9d</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\csl_tx_scheduler.cpp</file>
-         <hash>72b0a7b99a765fb79a8425abb22e60cb27114ccdbf35b7fbccc1884e040d8192</hash>
+         <hash>a4c9dc8936493fc6c8beda752b3c164d8c7c8a882b714d65f8c65544ff17c911</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\csl_tx_scheduler.hpp</file>
-         <hash>99e6470865f0fea758450dd3f09f7cdcd21206bed1a3263a3bc6c8dbeba2c264</hash>
+         <hash>f28b91ba1b830f36e508e6df02ffe4a5275e1d4b649e96bf102ecc6f464cf332</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\discover_scanner.cpp</file>
@@ -12155,7 +12122,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\dua_manager.hpp</file>
-         <hash>6992b6ce6d351d568c1b10beb5f7b730094b33bd8867d9c1db597f56534aa340</hash>
+         <hash>3a7979dcb0fb9ac16455855e309f574d01ad3e659b9bb8149668d4d55e7a3def</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\energy_scan_server.cpp</file>
@@ -12167,7 +12134,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\indirect_sender.cpp</file>
-         <hash>c331e76543e9a1a2a7ce5c77d09f3a5eb9c781685e789969d8f69cca5d53ec1d</hash>
+         <hash>d768040e111fc038d117c083b91a8dae4625d2f7b19945f211da04c1568cec8e</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\indirect_sender.hpp</file>
@@ -12187,11 +12154,11 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\link_metrics.cpp</file>
-         <hash>7d9df794d1f10a53e402520c423909efa3868564e06806e51dece957df2aa23b</hash>
+         <hash>c0d5de3b44e83401d781d6cf371749d89fe45ceafdb0c75cd10d1a9f331a5a4d</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\link_metrics.hpp</file>
-         <hash>814fba1083900c8768fce3660c619307f9491f3f1e7bca515bc17ba80f762577</hash>
+         <hash>9240e83c3c1f1ffa3f4b40d1c3c96ebe76f4f51887a917fc7f90da70ff6bd08c</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\link_metrics_tlvs.hpp</file>
@@ -12223,15 +12190,15 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\mesh_forwarder.cpp</file>
-         <hash>fcf483b12650f3fbb33f0f3cfd302b0e0a932f82106bfd11aaf36a76fc267cab</hash>
+         <hash>9c694d85da86d90df5a0d5842ba31e22323b5e285238598789cd62130c3ad624</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\mesh_forwarder.hpp</file>
-         <hash>4c0c5f41f4f43477e742546e38c50e3e9b9e1f15332e2ef3db638966958fd743</hash>
+         <hash>2e1bf955c8acbd5c5d65dd727f9674a12bc4fafe9d73dabd5b12cc7c668ca3c4</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\mesh_forwarder_ftd.cpp</file>
-         <hash>256d7387a34148b8bf20b9008a72a74fbaa596af3b0187001f21491c467c162e</hash>
+         <hash>6230f35ff1066bb14fd8e3887bbafef67987f833ee91a4f19f2b3ae540627f7b</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\mesh_forwarder_mtd.cpp</file>
@@ -12239,19 +12206,19 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\mle.cpp</file>
-         <hash>1bb2e4fca4491d95eb0f91f215509b7caff3f53652fa618e61eb229086d34ead</hash>
+         <hash>d60b59297a1b0d7758b85f2ed13eb56a9678f431f5d204a5fc9e6e904e4d58f6</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\mle.hpp</file>
-         <hash>7a29f907d9cb690fe9090daf43b9cac82ce839fc4b2cd14260584f973c11fa29</hash>
+         <hash>6dcf54731f129c92fb18b4888527d08146776b6a3ff7f66c5a623439c7bec0d7</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\mle_router.cpp</file>
-         <hash>dfbc7d12b159547b94e77080740de76be57d2653d8738d80ce2da887679b8a40</hash>
+         <hash>9d30875b068b3d9bdf6bdd62d00f867f7f19baca11227775d58da1641985c60b</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\mle_router.hpp</file>
-         <hash>aa78d0abec5ac7347e87dcb873f60451f1d23a6ce15c53de0884041f62f8a2fe</hash>
+         <hash>f71a7ec36e049e99325472341a2a7c0f57c8a3043da4b94026d551e3b62a8c8a</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\mle_tlvs.cpp</file>
@@ -12263,11 +12230,11 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\mle_types.cpp</file>
-         <hash>8afbf47fc9f18222feb9985a18f23976012cb573129121604582301d783ca159</hash>
+         <hash>49b14ace861c0e2c4c6a8231139d62b5affc45964c2de9bd6183dd774ea975e3</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\mle_types.hpp</file>
-         <hash>480515f2c44dd0ac73f23725b506c7118fd376fd2355180582511a877fa1d145</hash>
+         <hash>b4e1217ea0ac6cae9e31b203010a144d087d502c8d2a4a5892befaeeea8c79a6</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\mlr_manager.cpp</file>
@@ -12275,27 +12242,19 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\mlr_manager.hpp</file>
-         <hash>cf892bad44aba5fd20a35ae5a9cab55a3a84f850276cc906097138a9339c8577</hash>
+         <hash>dd31d4f4e1d00320cf1cdb4586f4b83aac50ac7cec2976a0f8c571b5882f9cc4</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\mlr_types.hpp</file>
          <hash>6a86c1585b09161866ee9522485ca246bf8f11b51ddd081bdeff22a1acbad91e</hash>
       </entry>
       <entry>
-         <file>..\src\config\default\driver\thread\openthread\src\core\thread\neighbor.cpp</file>
-         <hash>998169df004eb77f7787a0c8333be55a28ab82cc54dfcae5d5a2b562e06919d0</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\default\driver\thread\openthread\src\core\thread\neighbor.hpp</file>
-         <hash>e1f6127b8ed282346c0cb39844c37d842ca693d131051e4435fb6e035eb99c44</hash>
-      </entry>
-      <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\neighbor_table.cpp</file>
-         <hash>60cad68b6fd1bf3657c618ebc23c51b84ff5af6faba23cd4bb2ab3a0ca02ce48</hash>
+         <hash>665b3c325391122f42ad14188b214e81081dee42daaed6f6265d4e8f9f06d71a</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\neighbor_table.hpp</file>
-         <hash>99988cef24c5471d65396bcdc6034a47987a8e7af7aebc8ec462eb7c2b7f3538</hash>
+         <hash>95cef2ac0b772e29390bf6e59a88ce129a9477d8e19d7d794e0122b1e54807ab</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\network_data.cpp</file>
@@ -12307,7 +12266,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\network_data_leader.cpp</file>
-         <hash>6bb8d5e9d58df954eac018f04aae5b917a71956316c3250fb99150947a293c14</hash>
+         <hash>8a2f5ff69838ec1429818521b42602095f77f601ed7a1f74e6dc1f26eb3b8f8b</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\network_data_leader.hpp</file>
@@ -12315,11 +12274,11 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\network_data_leader_ftd.cpp</file>
-         <hash>35986ba46a73b61eb379cb2a60941954c247801c38c941838dcb8b0f29417d6e</hash>
+         <hash>8d8fee887ce3638c8d9d304e3aa2423ce58c0da8a84f3be43aa6fac5c73e8491</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\network_data_leader_ftd.hpp</file>
-         <hash>4ac81a1df498632faeb7369b0b6ffc2bccd34ceb8f6059cfec45fffa5b64aa4b</hash>
+         <hash>86d2be9113777b27da185b7cda248d20650df77ab2445b2c9d4fd71f989e5613</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\network_data_local.cpp</file>
@@ -12359,11 +12318,11 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\network_data_tlvs.hpp</file>
-         <hash>a74ce8a59632796a3172f880359105b10c58659810a058ff1419fb6dd5cb02c4</hash>
+         <hash>c2471e5d877adf448322e28a2f45f7cd847c17a8c73ef474225a3b9078194e3f</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\network_data_types.cpp</file>
-         <hash>358b7c37d5e3f90ad0f235f01e74d1659106d1928119e86a030b2a139d9004b5</hash>
+         <hash>da8581093b7d4e6525c47a4fbab8e94b61a406af8a212a69ca0628bd5ad2ee24</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\network_data_types.hpp</file>
@@ -12371,19 +12330,15 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\network_diagnostic.cpp</file>
-         <hash>c26dabeba4aa410f99cc1be1fcbe06fc2d7c4adce0aa00e5ff033f74bfd3698d</hash>
+         <hash>1fcce4235c13e1a9e530cef469a8b04a0afd5880d4b8d4a58337e864c8159d86</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\network_diagnostic.hpp</file>
-         <hash>cdb06d1341648eee765fc671efdf4f07d4192d46636e68312edafcd243721c9f</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\default\driver\thread\openthread\src\core\thread\network_diagnostic_tlvs.cpp</file>
-         <hash>8138eebb5cb91e8e00f6defcca865326e280eea90af7efefb919ebfe9fdc1f57</hash>
+         <hash>895cc7497b066177c7dc6c6a755266e877d1712f439f008ba0bc603e9267cfc5</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\network_diagnostic_tlvs.hpp</file>
-         <hash>1a4427b0fbdb7e9d2c2dd2f97d83fe50a237d167e41bfa79c393dc5a0a5c7907</hash>
+         <hash>44b30172ceac73f72ff674b7be9b021e7223072e176b2ae8a92a5ba74aba041e</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\panid_query_server.cpp</file>
@@ -12402,24 +12357,16 @@
          <hash>e9ca3cdc77bbe804fba447f02a18b66ee65396a0c231f6adfb9750f57dd7aea4</hash>
       </entry>
       <entry>
-         <file>..\src\config\default\driver\thread\openthread\src\core\thread\router.cpp</file>
-         <hash>8aad998bf5288f8d762fabd8cc30ee86305d5e48667c8782bf3f0a9a657baa83</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\default\driver\thread\openthread\src\core\thread\router.hpp</file>
-         <hash>a8b80defc9dfff78b6dfad54cf3fb21197a3737a9fa2d543fab4549a4f7830e4</hash>
-      </entry>
-      <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\router_table.cpp</file>
-         <hash>49bd021bad6dcef0a51ea95c8deed9ee51e23e62a975b22e15a6cf4fd5dc8d91</hash>
+         <hash>7fdd68b87deb86c0f0acaff3ef944188982ca677ef0d2668234cfdd58d2fe0c7</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\router_table.hpp</file>
-         <hash>e147d9c739b9cea569615ff3cfd4a99cee11a24ac1b838d7346ad6a8f44d8b2e</hash>
+         <hash>3c254c1d6f9556e99463f49e6e11cbffec5648f7c125f908e1c730f52106c06b</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\src_match_controller.cpp</file>
-         <hash>694bbee735f5889d1863f543017dd2586f8b2c53ef790909715b7bdd4bd9fb76</hash>
+         <hash>eeb0a550e485ffdb5b01ac75561f055817f2aeef0cce9d59f36ee8faf28b1467</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\src_match_controller.hpp</file>
@@ -12452,6 +12399,14 @@
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\tmf.hpp</file>
          <hash>63d9958eb7ed3d7bb2a2574d918008f6a666be4199ad48723ea6b9e4918b26b3</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\default\driver\thread\openthread\src\core\thread\topology.cpp</file>
+         <hash>bcc0813bfc6476b5cc9afe26536f98dad846be3f442e00f97a7d1c0f4c83cfe6</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\default\driver\thread\openthread\src\core\thread\topology.hpp</file>
+         <hash>22e9113958514b87197f1d5add5c2fe75322e0ab6384680c1ac3fe576683dc3b</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\thread\uri_paths.cpp</file>
@@ -12514,20 +12469,12 @@
          <hash>320f32ecf6a2e2010e895bb2ccbcf61dfbd74890c8addaea743ff681fa87ba72</hash>
       </entry>
       <entry>
-         <file>..\src\config\default\driver\thread\openthread\src\core\utils\link_metrics_manager.cpp</file>
-         <hash>edcff799dfc6beae8368fe6a5aedc20ac6b33ee886a5a00a1a08272b564675bf</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\default\driver\thread\openthread\src\core\utils\link_metrics_manager.hpp</file>
-         <hash>b60a635b3f00893233bbcf92f74c9e6f7a302c55f8fa60ee8af3533a6e16b0d5</hash>
-      </entry>
-      <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\utils\mesh_diag.cpp</file>
-         <hash>a2b3a81fecf4c18f2a4d7b167447bbe6218f8702bb702a0cd520ed6068064fcd</hash>
+         <hash>f3763836074f8d83100fe1d057ad8fac6a34775566fb27527a406ef1469a98e7</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\utils\mesh_diag.hpp</file>
-         <hash>372e1b4101434675d4fc076b5851a7dcab2d543b8839ba9bcc6d1996a6245445</hash>
+         <hash>9d8fe2fdae27914a34a2952b7dc8488d1b26ea61e4c93b98c85ef171ee361c14</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\utils\otns.cpp</file>
@@ -12535,7 +12482,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\utils\otns.hpp</file>
-         <hash>135e969ea852238bdaec0130913ea1eb0c8975c1d5bbc02cc4ac3d897f22af7f</hash>
+         <hash>fd00541ef3921425386d2642d6c25fb8fff3da7e2b20bc2cda92277d94d13412</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\openthread\src\core\utils\parse_cmdline.cpp</file>
@@ -13471,51 +13418,51 @@
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\src\alarm.c</file>
-         <hash>84505d6594834537a3af74dc95b149e8e8f7199fcd19f967da128e2efc78d7dd</hash>
+         <hash>63e324d199c4afe3d67cbb99b5dde38ebd3f2c21045f9b86fd7163b79053d4aa</hash>
       </entry>
       <entry>
-         <file>..\src\config\default\driver\thread\src\crypto\aes_alt.c</file>
-         <hash>65c49584dbd97e7231dff7adb6be80138f1320791a055a1e94bed3b2f94a1970</hash>
+         <file>..\src\config\default\driver\thread\src\crypto\crypto.c</file>
+         <hash>df21465a278cd02bc5a9a70c98446ab2bc0d49eb4c4260d7b29c71c1a6aeec02</hash>
       </entry>
       <entry>
-         <file>..\src\config\default\driver\thread\src\cxx_helpers.c</file>
-         <hash>69a70cbec4eefddaab8ca10afd5045cf859fc4de6128545f3d0b13519093b8aa</hash>
+         <file>..\src\config\default\driver\thread\src\cxx_helpers.cpp</file>
+         <hash>6191f15795660c018e316bcec9fc4146960ef5825a9efbdddaff9ab37f45151e</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\src\diag.c</file>
-         <hash>c5150a46f9b4200bfb56378369d5c5d37e0a28252baeac0976cbed1842911914</hash>
+         <hash>7626bd977b793e991b4a440818ac40b1386486421e9c524136239cf5eab2aa17</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\src\entropy.c</file>
-         <hash>2c4e5bf764f90c99c947c4f655667c25a34a842b6e48ec750666602634c12192</hash>
+         <hash>a438a3ad02a245dff10f4482b6b541414fae408b334af1d88df808a6e8789b4d</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\src\flash.c</file>
-         <hash>5653bb3263c929022737dd77012aec3ee99dba7c4ab8bb1906707963bd437471</hash>
+         <hash>81d236383b228953561cd413bb026db6da0616375ae5ea8306dd702d48c27d03</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\src\logging.c</file>
-         <hash>6986398546549ab1c42acdcbf5877f9236fd64a4633bb87ac1d28dfc283525f6</hash>
+         <hash>db7548a3c50277c2970b1e590170fefb576f3d841b04e74cfcbf2700c2b59305</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\src\misc.c</file>
-         <hash>d8c906fd7f2d11407d6fbed7969526a15c1fa62fb027701e4b95b043751b7ac6</hash>
+         <hash>5fd0249ca5cf8d38c7bf55f07e22a59cbaf17504f9e02513bf62e0c7c614997c</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\src\ot_tasks.c</file>
-         <hash>8480c9335bed016811652063ab4ffcad5660a3268bc10d0cb07c1163a9e7c412</hash>
+         <hash>256fecce0f7ad0b87859f9d3317a792b8effb106352716d452ede3fe721666bf</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\src\radio.c</file>
-         <hash>cb91a012dd3b02ab54b268f75728bad0fdeaf0aed0e5ed5d46a3e62a0b9d51f6</hash>
+         <hash>fc1317b17736b36c2c5d3d556442689825092fc9411e9a4ceea1c73406059995</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\src\system.c</file>
-         <hash>fb4dcb207cc4e30d12ca27931a26038c1ec44045beec5677a4690554dc0f1f79</hash>
+         <hash>a49160f4b86136b1503fc64f1553db88cd730af89c7d6634835bd893a92d94bc</hash>
       </entry>
       <entry>
          <file>..\src\config\default\driver\thread\src\uart.c</file>
-         <hash>283dfcc6bc24b3e4ab194edfc4ef4bc4d8d2ed3b8a7faf531431b9bb841ee6ee</hash>
+         <hash>2a23ebe568354b807fb036777c9896dacfea48b3a23c0d52bb4b9f43abb6e07e</hash>
       </entry>
       <entry>
          <file>..\src\config\default\exceptions.c</file>
@@ -13531,15 +13478,15 @@
       </entry>
       <entry>
          <file>..\src\config\default\initialization.c</file>
-         <hash>2d773f462ed7d42e552640b82fa4c6b6e701f0689235fa882d086c009a72907e</hash>
+         <hash>a214004eebeba7982a79a4fb5c62d3cc697bf117cf286f69e10751ae497a9769</hash>
       </entry>
       <entry>
          <file>..\src\config\default\interrupts.c</file>
-         <hash>e75e348b60dcd0ce4615fe1e193d1ea1a81c0c173bcc7f65b0b35edb8fd3fa67</hash>
+         <hash>f46e9cdd549e86352201e270c7e668e8652a416d2670262645648e0164246e18</hash>
       </entry>
       <entry>
          <file>..\src\config\default\interrupts.h</file>
-         <hash>ee4cb6c39c1e742d65a70e3e7d7b91c220b07908bdeaa8abaf6e4c248b9d4e28</hash>
+         <hash>06b15a81355a34b166a3150f0e990cb5f496374ff3f1d7b8b7a9a734f950cc87</hash>
       </entry>
       <entry>
          <file>..\src\config\default\libc_syscalls.c</file>
@@ -13571,7 +13518,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\peripheral\clk\plib_clk.c</file>
-         <hash>36312c95c08bbe93eb72336259394a51da97b1f8b35dfdbee804ebe19bd1c130</hash>
+         <hash>ade64c9d61259648aca4982d318967e14a6357782a9c68094ee5d3dafb695e9e</hash>
       </entry>
       <entry>
          <file>..\src\config\default\peripheral\clk\plib_clk.h</file>
@@ -13587,7 +13534,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\peripheral\evsys\plib_evsys.c</file>
-         <hash>b2e1a8004049e687fc5544133f3346f743ced50cdaf860c8e3c7f58df3cc163f</hash>
+         <hash>171913270aa095f1e8ff9192995129ff7bab22e5c793c4223f9046802e69d1e6</hash>
       </entry>
       <entry>
          <file>..\src\config\default\peripheral\evsys\plib_evsys.h</file>
@@ -13603,7 +13550,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\peripheral\nvic\plib_nvic.c</file>
-         <hash>337a89a6b4cfa5e1ef8b0efe2f99ab50b1658ac01caaf9dc755747a0b9e0f23d</hash>
+         <hash>dff7fbf7e5291aae074fac7edbb15836f289a0a5861e983dd7cf5018453b4674</hash>
       </entry>
       <entry>
          <file>..\src\config\default\peripheral\nvic\plib_nvic.h</file>
@@ -13626,20 +13573,8 @@
          <hash>460d6f0ff8ddcf103034d8124aa8b74dc1f86ac9b351b4123aea731d3c7b1a40</hash>
       </entry>
       <entry>
-         <file>..\src\config\default\peripheral\sercom\i2c_master\plib_sercom2_i2c_master.c</file>
-         <hash>5e37ac15d9e0483a19af27e020a06c448bc6d928a9bd0c0e72110d88bdf89aa2</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\default\peripheral\sercom\i2c_master\plib_sercom2_i2c_master.h</file>
-         <hash>3cb19d0a127d35f4200481e1b1e15356f5d46c98174a15297e8ffef2665d3fb6</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\default\peripheral\sercom\i2c_master\plib_sercom_i2c_master_common.h</file>
-         <hash>f167b04b3c6a0f83fe41b7b6f810cbf0a48b8ca7d5a747b76463dd53d3c1a2a2</hash>
-      </entry>
-      <entry>
          <file>..\src\config\default\peripheral\sercom\usart\plib_sercom0_usart.c</file>
-         <hash>5ee6e3e192047f38828fe73dd11ec50e09dc314c95951865b6c72973182a2947</hash>
+         <hash>23b83d57bb807331b4633728b0b98e2af0fdc931b2fc0d2462d3c4625c2bba06</hash>
       </entry>
       <entry>
          <file>..\src\config\default\peripheral\sercom\usart\plib_sercom0_usart.h</file>
@@ -13651,7 +13586,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\peripheral\tc\plib_tc0.c</file>
-         <hash>2fc5408192b52b60f89e43e0a03cc70344c5b4db823c5240e734cb5453ed5f9f</hash>
+         <hash>f1c389c5619a32b6a3eb66429c83857f4c9406b70d0a305697908dfe19975c3d</hash>
       </entry>
       <entry>
          <file>..\src\config\default\peripheral\tc\plib_tc0.h</file>
@@ -13715,7 +13650,7 @@
       </entry>
       <entry>
          <file>..\src\config\default\system\debug\sys_debug.h</file>
-         <hash>9ee0362649aa389b355ecff1ce0e64d124f8f83eda7e40a0c5195ee099c1a0ff</hash>
+         <hash>4162d9e1fab93b8b33f6c8a24726f5dc287ea05c31e3ab984c3c920c725d0882</hash>
       </entry>
       <entry>
          <file>..\src\config\default\system\int\src\sys_int.c</file>
@@ -14163,111 +14098,111 @@
       </entry>
       <entry>
          <file>..\src\stack_config.h</file>
-         <hash>adc648351d8a4f261e42e0349f407b3a2c281084eb3b67a33a860802496b97bb</hash>
+         <hash>33a5351e9dce11099a330813053d854f6adb65e441c31df993cc0bbc62d90584</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\FreeRTOS_tasks.c</file>
-         <hash>14020d617b96dd2814e1211f6e3b645bcf5e2bd3179c23fe7dd16bc666fe9463</hash>
+         <hash>b0e2349f8d150fcb569570d73cf8a80da4eee689039a9f291e8b3c36af6f97f4</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\croutine.c</file>
-         <hash>ebf0cdce261dc4a256c06c0d4ad2582e6026a6da0e973d4cb92092e94ce8f370</hash>
+         <hash>0ca8c178b698a6ad5ce3f6f1246ab287bfb5510f3c04e1d00e5cfb49c57fc66b</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\event_groups.c</file>
-         <hash>76e967b14d231e4f31f014f1564f359a7bfd36bfa263ee6f437afa8c056df657</hash>
+         <hash>42ca0bc7afdfb48e9089dff2b4b047e1515a93e7fce031756af6c49b2212c215</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\FreeRTOS.h</file>
-         <hash>03e9c94aba57e3cf7f4f73bc2d3eb4a96ae38f3425eedb5450622ca286475a0b</hash>
+         <hash>7e29c7d9c773561ec4d0125409036f102f1f15162e213d32568ddf3d8ceddfeb</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\croutine.h</file>
-         <hash>cf52c15fa26a8d4f82b55909b75ebfe2aab25468ba7780748912ddead9812b4e</hash>
+         <hash>b7060be39f6c8d0ffd169806382eed5a411776f0d69b0fb3ade6b07e678303f9</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\deprecated_definitions.h</file>
-         <hash>35000a143464bbbd8df7c9a6f066a64598a24da5174a7be33972e62bfbd75f4d</hash>
+         <hash>81d325362fc67518de04d5070609e537d0757e4cc6d6332e8118b4f81a4fdce7</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\event_groups.h</file>
-         <hash>7b3dd12a50d649c124c1af8be742671b9965b6f924310bda7984fe1b65c7f54a</hash>
+         <hash>2399a780de0eefe95067f5b7744d5e213ad9c793fc6468a8535a8e604f85cbba</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\list.h</file>
-         <hash>dc572f54391c0407fc25db360d912fca9118cddae7bd2e3099eb13f18804e5a9</hash>
+         <hash>0848dc9696a2d4d11bb6957fedb6ec5dfb1c2326dfb66af5ca848b1b32a86b66</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\message_buffer.h</file>
-         <hash>9a8141d3d6c8044a57d7e448180c9bd2ed32e45ded32be288d095a39dced91ab</hash>
+         <hash>4883fce829d415b7d14d0567965cd97e41634339cd3a72a07b76baebedbc0a57</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\mpu_prototypes.h</file>
-         <hash>2b46a2511ce5d23a56bc83079333d8d0a2e33763e5829c9383252806887a3dc0</hash>
+         <hash>8cb02fee372e1cc1958022e054122d248c1c184cfc00eb3db6d0fbc0bfef87d1</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\mpu_wrappers.h</file>
-         <hash>5014408cc33f0f616215f2b48c67b0d47ccc35bfd5f0044ac653b5bbc6cf5778</hash>
+         <hash>d99486024fd44173ff23c14ee8561b6e0ce6ee41ad6d6a7e7b17ea97a5023e8b</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\portable.h</file>
-         <hash>7ade8f368002778c723b3c4e14084910b7225cd36363ed0c948e9ea36c6f251f</hash>
+         <hash>d26267188226020346bd048c9dd0e767b91c7023e5ee0d5f9aa7c7c1864de180</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\projdefs.h</file>
-         <hash>8faf4220ded25b00fd72424a2fa4e63e154713ae7b42f7270f1e3289362a6312</hash>
+         <hash>3d37a1403a69a58a07e214f6a9759601cc0fbe53319c5b14e17f4de5fb8ec0b7</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\queue.h</file>
-         <hash>1b61c1669091e59798a34c32c0f1e234d3f6a645f47641753eceeb7e1d9ce628</hash>
+         <hash>27b85dc3c610f83fee9208e0dd4d8dfa3168ea2259cbe1662e2f6a0ac55431f5</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\semphr.h</file>
-         <hash>c624e8cdfc07844d4cf35382f3cc908c872375c7a3048482bdc110bda88cc4f2</hash>
+         <hash>89a46fcd718990d24f9fea16c681527eec502712ca2d1b0a4e8d6c205f7452e1</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\stack_macros.h</file>
-         <hash>3cddf2b3d47ae387e376ac75eb468f9d8ffb575d68c143e08d54af4087474cce</hash>
+         <hash>d167d886d199615eeeca0acb935bf5c99b42c30a322273363ddc8dec03a58174</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\stream_buffer.h</file>
-         <hash>b876d839460197d94d0f95fb93c6aeb457f6fc572d32258480fed7d4de686b6b</hash>
+         <hash>51da6d9a7cc2cf1504b4f1564e814f422efb9b688fc6e58946f41d0fe23d2d22</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\task.h</file>
-         <hash>45f2245c914ed25ab26a1ea78ddd4ac74cb6522e1b26ac5c44b614ca4c8cee99</hash>
+         <hash>0d71440d1d81d990fa79677c0836712a3e2655ff3ad75478f5a221e2f0583cf8</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\timers.h</file>
-         <hash>ee0f596a54137e26ca806ebf067c4c6219a61348f1cbae8861a43d2d4891e1f9</hash>
+         <hash>19e373d04e2f01f9f69a9d3017a75a46b4f7b6e8016742702b10e112786d6181</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\list.c</file>
-         <hash>db5c169cf3efd68da1c6a923ac84eebc724d602c940bde0b9b5f01f05028fde4</hash>
+         <hash>55a947c8bd1eec01ebafcb46ccc96cd33090cbdcd3f0114b9ea6a61ebdd6ee7a</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\portable\GCC\SAM\ARM_CM4F\port.c</file>
-         <hash>11f2202099ed9a73f5ae5ef9dac414f6d9b257d6480bd9c9a1e38a71b3ee8d41</hash>
+         <hash>b0bbd34c94672aecf577f6d721a6b267f56008425047a479a9c7071cc1c2a97a</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\portable\GCC\SAM\ARM_CM4F\portmacro.h</file>
-         <hash>d569e2a29af1c742b69cb16e15d256611fa7979bda2b355e03426d3c40369e42</hash>
+         <hash>284552cdf69a53d3c8afaf3f270f4bd11d8dd9ab462bb06d62b9ef99f3819619</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\portable\MemMang\heap_4.c</file>
-         <hash>d48a51e34caed771e6650d95f6c2527e52fde2a6ebc6f83b49d003aef0135e05</hash>
+         <hash>3a16d742be46814ed11142c370519f74d004e21afdcb2b3e0584a30011f52186</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\queue.c</file>
-         <hash>5cdf4fa35fe059446effff5bf20deaf83ddffb08921bc198fda106b1d17dd894</hash>
+         <hash>a4c20318c20a5f49a34fc757092818eb1065b19f142394a04889aa40d67a5023</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\stream_buffer.c</file>
-         <hash>0ec303ba296caca5de955dc470bcadd134fb15b192ddf61c9afc92070bc1039a</hash>
+         <hash>b825d6bccefea8a8c06b4a2022dede20af67f5bc2a2e4976947b376bc41613a7</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\timers.c</file>
-         <hash>24962ef361f396aaa5e6e33776eeeddaf2fb251c87b6fe50602acc56c537b093</hash>
+         <hash>3b936fac70fa25b959b53990cd15c20fb85956cdbe22af4249fde0a94590ff01</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\certs_test.h</file>

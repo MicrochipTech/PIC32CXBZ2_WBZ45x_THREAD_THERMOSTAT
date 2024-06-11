@@ -59,14 +59,14 @@ This application enables the users to create a Full Thread Device. Thread Thermo
 	  - dev_packs: v3.18.1
 	  - wolfssl version: v5.4.0
 	  - crypto version: v3.8.1
-	  - wireless_pic32cxbz_wbz: v1.1.0
-	  - wireless_15_4_phy version: v1.1.0
-	  - wireless_thread: v1.0.0
-	  - openthread version : mchp_harmony_wireless_thread_v1.0.0
+	  - wireless_pic32cxbz_wbz: v1.3.0
+	  - wireless_15_4_phy version: v1.2.0
+	  - wireless_thread: v1.1.1
+	  - openthread version : thread-reference-20230706
 
 - Any Serial Terminal application like [TERA TERM](https://download.cnet.com/Tera-Term/3000-2094_4-75766675.html) terminal application
 
-- [MPLAB X IPE v6.15](https://microchipdeveloper.com/ipe:installation)
+- [MPLAB X IPE v6.20](https://microchipdeveloper.com/ipe:installation)
 
 ## 4. Harmony MCC Configuration<a name="step4">
 

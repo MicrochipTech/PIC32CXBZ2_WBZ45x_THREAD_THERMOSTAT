@@ -48,12 +48,11 @@
 #include "crypto/sha256.hpp"
 #include "mac/mac_frame.hpp"
 #include "radio/radio.hpp"
-#include "thread/child.hpp"
 #include "thread/child_table.hpp"
 #include "thread/link_quality.hpp"
 #include "thread/mle_router.hpp"
-#include "thread/neighbor.hpp"
 #include "thread/thread_netif.hpp"
+#include "thread/topology.hpp"
 
 namespace ot {
 namespace Mac {
@@ -340,10 +339,6 @@ void Mac::PerformEnergyScan(void)
     }
     else
     {
-        if (!GetRxOnWhenIdle())
-        {
-            mLinks.Receive(mScanChannel);
-        }
         error = mLinks.EnergyScan(mScanChannel, mScanDuration);
     }
 
@@ -743,7 +738,7 @@ TxFrame *Mac::PrepareBeaconRequest(void)
 
     addrs.mSource.SetNone();
     addrs.mDestination.SetShort(kShortAddrBroadcast);
-    panIds.SetDestination(kShortAddrBroadcast);
+    panIds.mDestination = kShortAddrBroadcast;
 
     frame.InitMacHeader(Frame::kTypeMacCmd, Frame::kVersion2003, addrs, panIds, Frame::kSecurityNone);
 
@@ -774,7 +769,7 @@ TxFrame *Mac::PrepareBeacon(void)
 #endif
 
     addrs.mSource.SetExtended(GetExtAddress());
-    panIds.SetSource(mPanId);
+    panIds.mSource = mPanId;
     addrs.mDestination.SetNone();
 
     frame->InitMacHeader(Frame::kTypeBeacon, Frame::kVersion2003, addrs, panIds, Frame::kSecurityNone);
@@ -1608,7 +1603,6 @@ Error Mac::ProcessReceiveSecurity(RxFrame &aFrame, const Address &aSrcAddr, Neig
         {
             aNeighbor->SetKeySequence(keySequence);
             aNeighbor->SetMleFrameCounter(0);
-            aNeighbor->GetLinkFrameCounters().Reset();
         }
 
 #if OPENTHREAD_CONFIG_MULTI_RADIO
@@ -2297,16 +2291,6 @@ void Mac::SetCslPeriod(uint16_t aPeriod)
     UpdateCsl();
 }
 
-uint32_t Mac::GetCslPeriodInMsec(void) const
-{
-    return DivideAndRoundToClosest<uint32_t>(CslPeriodToUsec(GetCslPeriod()), 1000u);
-}
-
-uint32_t Mac::CslPeriodToUsec(uint16_t aPeriodInTenSymbols)
-{
-    return static_cast<uint32_t>(aPeriodInTenSymbols) * kUsPerTenSymbols;
-}
-
 bool Mac::IsCslEnabled(void) const { return !Get<Mle::Mle>().IsRxOnWhenIdle() && IsCslCapable(); }
 
 bool Mac::IsCslCapable(void) const { return (GetCslPeriod() > 0) && IsCslSupported(); }
@@ -2333,8 +2317,6 @@ void Mac::ProcessCsl(const RxFrame &aFrame, const Address &aSrcAddr)
     VerifyOrExit(child != nullptr);
 
     csl = reinterpret_cast<const CslIe *>(cur + sizeof(HeaderIe));
-    VerifyOrExit(csl->GetPeriod() >= kMinCslIePeriod);
-
     child->SetCslPeriod(csl->GetPeriod());
     child->SetCslPhase(csl->GetPhase());
     child->SetCslSynchronized(true);

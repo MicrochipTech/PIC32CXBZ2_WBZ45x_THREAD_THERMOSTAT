@@ -26,13 +26,6 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-/**
- * @file
- *   This file includes the platform-specific initializers.
- *
- */
-
-
 /*******************************************************************************
 * Copyright (C) [2024], Microchip Technology Inc., and its subsidiaries. All rights reserved.
   
@@ -56,109 +49,66 @@
 * Microchip or any third party.
  *******************************************************************************/
 
+/**
+ * @file
+ *    This file implements the Crypto platform APIs.
+ */
 
-#ifndef PLATFORM_PIC32CX_H_
-#define PLATFORM_PIC32CX_H_
+#include <openthread/platform/crypto.h>
 
-#include <stdint.h>
+#include <openthread-core-config.h>
+#include <openthread/config.h>
 
-#include <openthread/instance.h>
+#include "configuration.h"
 
-#define PLAT_MODULE_ID_MASK 0xFF00
-#define PLAT_UART_MODULE_ID 0x0100
-#define PLAT_RADIO_MODULE_ID 0x0200
-#define PLAT_ALARM_MODULE_ID 0x0300
-#define OT_TASKLET_PROCESS_ID 0x0400
+#include <assert.h>
+#include <utils/code_utils.h>
+#include <wolfcrypt/aes.h>
 
-typedef enum ot_MsgId_t
+static struct Aes wcAes;
+
+
+otError otPlatCryptoAesInit(otCryptoContext *aContext)
 {
-    OT_MSG_UART_RX_DONE = 0x0101,
-    OT_MSG_UART_TX_DONE = 0x0102,
-    OT_MSG_RADIO_RX_DONE= 0x0201,
-    OT_MSG_RADIO_TX_DONE = 0x0202,
-    OT_MSG_RADIO_SCAN_DONE = 0x0203,
-    OT_MSG_TMR_MILLI_CB_DONE = 0x0301,
-	OT_MSG_TMR_MICRO_CB_DONE = 0x0302,
-    OT_MSG_TASKLET_PROCESS_PENDING = 0x0401
-} OT_MsgId_T;
+    OT_UNUSED_VARIABLE(aContext);
 
-typedef struct OT_Msg_T
+    return OT_ERROR_NONE;
+}
+
+otError otPlatCryptoAesSetKey(otCryptoContext *aContext, const otCryptoKey *aKey)
 {
-    uint16_t OTMsgId;
-    //uint8_t OTMsgData[256];
-} OT_Msg_T;
+    int ret = -1;
+    uint8_t dummyIV[16] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    OT_UNUSED_VARIABLE(aContext);
 
-// Global OpenThread instance structure
-extern otInstance *sInstance;
+    otEXPECT(aKey->mKey != NULL);
+    otEXPECT(aKey->mKeyLength == 16);
 
-/**
- * This function initializes the alarm service used by OpenThread.
- *
- */
-void pic32cxAlarmInit(void);
+    ret = wc_AesSetKey(&wcAes, aKey->mKey, aKey->mKeyLength, dummyIV, AES_ENCRYPTION);
+    
+    otEXPECT(ret == 0);
 
-/**
- * This function performs alarm driver processing.
- *
- * @param[in]  aInstance  The OpenThread instance structure.
- *
- */
-void pic32cxAlarmProcess(otInstance *aInstance,OT_MsgId_T otAlarmMsgId);
+    return OT_ERROR_NONE;
+    
+exit:
+    return OT_ERROR_FAILED;
+}
 
-/**
- * This function initializes the radio service used by OpenThread.
- *
- */
-void pic32cxRadioInit(void);
+otError otPlatCryptoAesEncrypt(otCryptoContext *aContext, const uint8_t *aInput, uint8_t *aOutput)
+{
+    int ret = -1;
+    ret = wc_AesEcbEncrypt(&wcAes, aOutput, aInput, AES_BLOCK_SIZE);
+    
+    otEXPECT(ret == 0);
+    
+    return OT_ERROR_NONE;
 
-/**
- * This function performs radio driver processing.
- *
- * @param[in]  aInstance  The OpenThread instance structure.
- *
- */
-void pic32cxRadioProcess(otInstance *aInstance,OT_MsgId_T otRadioMsg);
+exit:
+    return OT_ERROR_FAILED;
+}
 
-/**
- * This function returns 32-bits random value.
- *
- */
-uint32_t pic32cxRadioRandomGet(void);
-
-/**
- * This function returns random value sequence.
- *
- */
-void pic32cxRadioRandomGetTrue(uint8_t *aOutput, uint16_t aOutputLength);
-
-/**
- * This function initializes the random number service used by OpenThread.
- *
- */
-void pic32cxRandomInit(void);
-
-/**
- * This function initializes the Uart service used by OpenThread.
- *
- */
-void pic32cxUartInit(void);
-
-/**
- * This function performs UART driver processing.
- *
- */
-void pic32cxUartProcess(OT_MsgId_T otUartMsgId);
-
-/**
- * This function returns platform IEEE EUI-64.
- *
- */
-void pic32cxGetIeeeEui64(otInstance *aInstance, uint8_t *aIeeeEui64);
-
-/**
- * Initialization of Logger driver.
- *
- */
-void pic32cxLogInit(void);
-
-#endif // PLATFORM_PIC32CX_H_
+otError otPlatCryptoAesFree(otCryptoContext *aContext)
+{
+    OT_UNUSED_VARIABLE(aContext);
+    return OT_ERROR_NONE;
+}

@@ -73,7 +73,7 @@ namespace Mac {
 
 constexpr uint32_t kDataPollTimeout =
     OPENTHREAD_CONFIG_MAC_DATA_POLL_TIMEOUT; ///< Timeout for receiving Data Frame (in msec).
-constexpr uint32_t kSleepDelay = 300;        ///< Max sleep delay when frame is pending (in msec).
+constexpr uint32_t kSleepDelay = 300;        ///< Max sleep delay when frame is pending (in msec)
 
 constexpr uint16_t kScanDurationDefault = OPENTHREAD_CONFIG_MAC_SCAN_DURATION; ///< Duration per channel (in msec).
 
@@ -86,8 +86,6 @@ constexpr uint8_t kDefaultMaxFrameRetriesIndirect = OPENTHREAD_CONFIG_MAC_DEFAUL
 constexpr uint8_t kMaxFrameRetriesCsl             = 0;
 
 constexpr uint8_t kTxNumBcast = OPENTHREAD_CONFIG_MAC_TX_NUM_BCAST; ///< Num of times broadcast frame is tx.
-
-constexpr uint16_t kMinCslIePeriod = OPENTHREAD_CONFIG_MAC_CSL_MIN_PERIOD;
 
 /**
  * Defines the function pointer called on receiving an IEEE 802.15.4 Beacon during an Active Scan.
@@ -622,15 +620,12 @@ public:
     uint16_t GetCslPeriod(void) const { return mCslPeriod; }
 
     /**
-     * Gets the CSL period in milliseconds.
-     *
-     * If the CSL period cannot be represented exactly in milliseconds, return the rounded value to the nearest
-     * millisecond.
+     * Gets the CSL period.
      *
      * @returns CSL period in milliseconds.
      *
      */
-    uint32_t GetCslPeriodInMsec(void) const;
+    uint32_t GetCslPeriodMs(void) const { return mCslPeriod * kUsPerTenSymbols / 1000; }
 
     /**
      * Sets the CSL period.
@@ -639,16 +634,6 @@ public:
      *
      */
     void SetCslPeriod(uint16_t aPeriod);
-
-    /**
-     * This method converts a given CSL period in units of 10 symbols to microseconds.
-     *
-     * @param[in] aPeriodInTenSymbols   The CSL period in unit of 10 symbols.
-     *
-     * @returns The converted CSL period value in microseconds corresponding to @p aPeriodInTenSymbols.
-     *
-     */
-    static uint32_t CslPeriodToUsec(uint16_t aPeriodInTenSymbols);
 
     /**
      * Indicates whether CSL is started at the moment.
@@ -695,6 +680,7 @@ public:
     {
         mLinks.GetSubMac().SetCslParentAccuracy(aCslAccuracy);
     }
+
 #endif // OPENTHREAD_CONFIG_MAC_CSL_RECEIVER_ENABLE
 
 #if OPENTHREAD_CONFIG_MAC_FILTER_ENABLE && OPENTHREAD_CONFIG_RADIO_LINK_IEEE_802_15_4_ENABLE

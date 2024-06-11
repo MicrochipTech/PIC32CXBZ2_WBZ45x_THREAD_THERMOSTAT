@@ -391,7 +391,6 @@ private:
                      const MessageInfo &aMessageInfo,
                      uint8_t            aIpProto,
                      bool               aApplyFilter,
-                     bool               aReceive,
                      Message::Ownership aMessageOwnership);
     Error HandleExtensionHeaders(Message      &aMessage,
                                  MessageOrigin aOrigin,
