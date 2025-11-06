@@ -125,6 +125,7 @@ extern float temp_demo_value;
 extern otIp6Address gatewayAddr;
 extern devTypeThermostatSensorSet_t tempSensor;
 extern devTypeThermostatHVACReport_t tempHVACReport;
+
 void threadSendIPAddr(void)
 {
     if(0 != gatewayAddr.mFields.m32[0])

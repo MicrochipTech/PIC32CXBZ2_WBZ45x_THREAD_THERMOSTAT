@@ -57,14 +57,6 @@
 #include "timers.h"
 #include "thread_demo.h"
 
-//#include "openthread/udp.h"
-//#include "openthread/message.h"
-//#include "openthread/ip6.h"
-//#include "openthread/instance.h"
-//#include "openthread/error.h"
-//#include "openthread/thread.h"
-
-#include "app_tempHum13/app_temphum13.h"
 // *****************************************************************************
 // *****************************************************************************
 // Section: Global Data Definitions
@@ -92,8 +84,6 @@
 APP_DATA appData;
 extern otInstance *instance;
 
-static TimerHandle_t tempTimerHandle = NULL;
-void tempTmrCb(TimerHandle_t pxTimer);
 // *****************************************************************************
 // *****************************************************************************
 // Section: Application Callback Functions
@@ -109,7 +99,7 @@ extern devDetails_t threadDevice;
 extern otInstance *instance;
 otUdpSocket aSocket;
 
-devTypeThermostatHVACReport_t tempHVACReport;
+devTypeThermostatHVACReport_t tempHVACReport = {.setPoint = 30.0, .onOffStatus = 0};
 /* The timer created for LED that blinks when it receives the data from the Leader */
 static TimerHandle_t Data_sent_LED_Timer_Handle = NULL;
 /* The timer created for LED that blinks when it sends data to the Leader*/
@@ -117,8 +107,7 @@ static TimerHandle_t Data_receive_LED_Timer_Handle = NULL;
 
 extern volatile uint16_t temperature_value;
 
-devTypeThermostatHVACSet_t hvacActuator = {30
-};
+devTypeThermostatHVACSet_t hvacActuator = {30.0};
 
 static void Data_sent_LED_Timer_Callback(TimerHandle_t xTimer)
 {
@@ -156,11 +145,6 @@ volatile uint16_t temperature_value;
 // Section: Application Initialization and State Machine Functions
 // *****************************************************************************
 // *****************************************************************************
-
-void tempTmrCb(TimerHandle_t pxTimer)
-{
-    //temperature_value = temphum13_get_temperature();
-}
 
 void printIpv6Address(void)
 {
@@ -201,7 +185,8 @@ void APP_Initialize ( void )
     /* TODO: Initialize your application's state machine and other
      * parameters.
      */
-    
+    RGB_LED_BLUE_On();
+    RGB_LED_RED_Off();
 }
 
 
@@ -235,13 +220,6 @@ void APP_Tasks ( void )
             threadDevice.devNameSize = sizeof(DEMO_DEVICE_NAME);
             memcpy(&threadDevice.devName, DEMO_DEVICE_NAME, sizeof(DEMO_DEVICE_NAME));
 
-            tempTimerHandle = xTimerCreate("temp app tmr", (APP_TEMP_TIMER_INTERVAL_MS / portTICK_PERIOD_MS), true, ( void * ) 0, tempTmrCb);
-            xTimerStart(tempTimerHandle, 0);
-            if(tempTimerHandle == NULL)
-            {
-                app_printf("App_Err: App Timer creation failed\n");
-            }
-                
             if (appInitialized)
             {
 
@@ -343,8 +321,6 @@ void threadReceiveData(const otMessageInfo *aMessageInfo, uint16_t length, uint8
     }
     else if(MSG_TYPE_THERMO_HVAC_GET == rxMsg->msgType)
     {
-//        tempHVACReport.setPoint = 31.5;
-//        tempHVACReport.onOffStatus = 1;
         demoMsg.msgType = MSG_TYPE_THERMO_HVAC_REPORT;
         memcpy(&demoMsg.msg, &tempHVACReport, sizeof(devTypeThermostatHVACReport_t));
         threadUdpSend(&gatewayAddr, 4 + sizeof(devTypeThermostatHVACReport_t), (uint8_t *)&demoMsg);
@@ -355,16 +331,16 @@ void threadReceiveData(const otMessageInfo *aMessageInfo, uint16_t length, uint8
         app_printf("Temp-%0.2f\r\n", tempSensor->temperature);
         if(tempSensor->temperature > hvacActuator.setPoint)
         {
-            GPIO_RB1_Clear();
+            RGB_LED_BLUE_Off();
+            RGB_LED_RED_On();
             app_printf("HVAC - ON...\r\n");
-            RGB_LED_BLUE_On();
             tempHVACReport.onOffStatus = 1;
         }
         else
         {
-            GPIO_RB1_Set();
+            RGB_LED_BLUE_On();
+            RGB_LED_RED_Off();
             app_printf("HVAC - OFF...\r\n");
-            RGB_LED_BLUE_Off();
             tempHVACReport.onOffStatus = 0;
         }
     }
@@ -390,30 +366,6 @@ void otUdpReceiveCb(void *aContext, otMessage *aMessage, const otMessageInfo *aM
     OSAL_QUEUE_SendISR(&appData.appQueue, &appMsg_otUdpReceiveCb);
 //    OSAL_QUEUE_Send(&appData.appQueue, &appMsg_otUdpReceiveCb, 0);
 }
-
-//void otUdpReceiveCb(void *aContext, otMessage *aMessage, const otMessageInfo *aMessageInfo)
-//{
-//    APP_Msg_T appMsg_otUdpReceiveCb;
-//    
-//    uint16_t len = otMessageGetLength(aMessage) - otMessageGetOffset(aMessage);
-//    uint8_t output_buffer[len+1];
-//    
-//    otMessageRead(aMessage,otMessageGetOffset(aMessage),output_buffer,len);
-//    output_buffer[len] = '\0';
-//    
-//    
-//    appMsg_otUdpReceiveCb.msgId = APP_MSG_OT_RECV_CB;
-//    
-//    otUdpReceiveData_t *otUdpReceiveData;
-//    otUdpReceiveData = (otUdpReceiveData_t *)&appMsg_otUdpReceiveCb;
-//        
-//    memcpy(otUdpReceiveData->messageInfo, aMessageInfo, sizeof(otMessageInfo));
-//    otUdpReceiveData->length = (uint8_t)len;
-//    memcpy(otUdpReceiveData->msgPayload, &output_buffer, len);
-//
-//    OSAL_QUEUE_Send(&appData.appQueue, &appMsg_otUdpReceiveCb, 0);
-//    
-//}
 
 void threadUdpOpen()
 {
